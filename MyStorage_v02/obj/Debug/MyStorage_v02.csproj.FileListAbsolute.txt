@@ -1,0 +1,194 @@
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\MainWindow.g.cs
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\App.g.cs
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\MyStorage_v02_MarkupCompile.cache
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\MyStorage_v02_MarkupCompile.lref
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\MyStorage_v02.exe.config
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\MyStorage_v02.exe
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\MyStorage_v02.pdb
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\MainWindow.baml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\MyStorage_v02.g.resources
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\MyStorage_v02.Properties.Resources.resources
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\MyStorage_v02.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\MyStorage_v02.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\MyStorage_v02.exe
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\MyStorage_v02.pdb
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\SignUpForm.g.cs
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\SignUpForm.baml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\ChooseForm.g.cs
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\ChooseForm.baml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\Storage.g.cs
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\Storage.baml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\MyFile.g.cs
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\MyFile.baml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.Windows.Design.Interaction.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\en\Microsoft.Windows.Design.Interaction.resources.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\en\Microsoft.Windows.Design.Extensibility.resources.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\MyStorage_v02.csproj.CopyComplete
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\Email.g.cs
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\Email.baml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\EntityFramework.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\EntityFramework.xml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\MyStorage_v02_Content.g.cs
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\WpfAnimatedGif.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\WpfAnimatedGif.pdb
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\WpfAnimatedGif.xml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\System.Buffers.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\System.IO.Hashing.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\System.Memory.Data.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\System.Memory.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\System.Security.Permissions.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\System.Text.Json.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\System.ValueTuple.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\System.Buffers.xml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\System.IO.Hashing.xml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\System.Memory.xml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\System.Memory.Data.xml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\System.Security.Permissions.xml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\System.Text.Json.xml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\System.ValueTuple.xml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\Azure.Core.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\Azure.Storage.Blobs.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\Azure.Storage.Common.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\Azure.Storage.Files.Shares.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.Azure.Storage.Blob.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.Azure.Storage.Common.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\Azure.Core.xml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\Azure.Storage.Blobs.xml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\Azure.Storage.Common.xml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\Azure.Storage.Files.Shares.xml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.Azure.Storage.Blob.xml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.Azure.Storage.Common.xml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\LoadControl.g.cs
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\LoadControl.baml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\ProcessControl.g.cs
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\ProcessControl.baml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\XamlAnimatedGif.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\XamlAnimatedGif.pdb
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\MyStorage_v02.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.WindowsAPICodePack.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.WindowsAPICodePack.xml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\RenameWin.g.cs
+C:\Users\Admin\source\repos\MyStorage_v02\MyStorage_v02\obj\Debug\RenameWin.baml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\MyStorage_v02.exe.config
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\MyStorage_v02.exe
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\MyStorage_v02.pdb
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\Azure.Core.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\Azure.Storage.Blobs.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\Azure.Storage.Common.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\Azure.Storage.Files.Shares.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\EntityFramework.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\EntityFramework.SqlServer.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.Azure.Storage.Blob.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.Azure.Storage.Common.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.Windows.Design.Interaction.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.WindowsAPICodePack.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\Newtonsoft.Json.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\System.Buffers.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\System.IO.Hashing.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\System.Memory.Data.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\System.Memory.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\System.Numerics.Vectors.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\System.Security.AccessControl.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\System.Security.Permissions.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\System.Security.Principal.Windows.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\System.Text.Encodings.Web.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\System.Text.Json.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\System.ValueTuple.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\WpfAnimatedGif.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\XamlAnimatedGif.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\Azure.Core.xml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\Azure.Storage.Blobs.xml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\Azure.Storage.Common.xml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\Azure.Storage.Files.Shares.xml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\EntityFramework.xml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\EntityFramework.SqlServer.xml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.Azure.Storage.Blob.xml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.Azure.Storage.Common.xml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.WindowsAPICodePack.xml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\Newtonsoft.Json.xml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\System.Buffers.xml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\System.IO.Hashing.xml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\System.Memory.xml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\System.Memory.Data.xml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\System.Numerics.Vectors.xml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\System.Security.AccessControl.xml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\System.Security.Permissions.xml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\System.Security.Principal.Windows.xml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\System.Text.Encodings.Web.xml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\System.Text.Json.xml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\System.ValueTuple.xml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\WpfAnimatedGif.pdb
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\WpfAnimatedGif.xml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\XamlAnimatedGif.pdb
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\en\Microsoft.Windows.Design.Interaction.resources.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\en\Microsoft.Windows.Design.Extensibility.resources.dll
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\MyStorage_v02.csproj.AssemblyReference.cache
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\ChooseForm.g.cs
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\Email.g.cs
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\LoadControl.g.cs
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\MainWindow.g.cs
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\MyFile.g.cs
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\ProcessControl.g.cs
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\RenameWin.g.cs
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\SignUpForm.g.cs
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\Storage.g.cs
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\App.g.cs
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\MyStorage_v02_Content.g.cs
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\MyStorage_v02_MarkupCompile.cache
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\MyStorage_v02_MarkupCompile.lref
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\ChooseForm.baml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\Email.baml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\LoadControl.baml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\MainWindow.baml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\MyFile.baml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\ProcessControl.baml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\RenameWin.baml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\SignUpForm.baml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\Storage.baml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\MyStorage_v02.g.resources
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\MyStorage_v02.Properties.Resources.resources
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\MyStorage_v02.csproj.GenerateResource.cache
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\MyStorage_v02.csproj.CoreCompileInputs.cache
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\MyStorage_v02.exe
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\MyStorage_v02.pdb
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\MyStorag.A08F6767.Up2Date

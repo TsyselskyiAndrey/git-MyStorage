@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MyStorageModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="MyStorageModelStoreContainer">
+    <EntitySet Name="Files" EntityType="MyStorageModel.Store.Files" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Users" EntityType="MyStorageModel.Store.Users" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK__Files__UserId__0B91BA14" Association="MyStorageModel.Store.FK__Files__UserId__0B91BA14">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Files" EntitySet="Files" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Files">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Type" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SizeBytes" Type="bigint" Nullable="false" />
+    <Property Name="DateOfAddition" Type="datetime" Nullable="false" />
+    <Property Name="DateOfRemoval" Type="datetime" Nullable="false" />
+    <Property Name="IsFavorite" Type="bit" Nullable="false" />
+    <Property Name="IsRemoved" Type="bit" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="Surname" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="Email" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MaxSize" Type="bigint" Nullable="false" />
+    <Property Name="FullSize" Type="bigint" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Files__UserId__0B91BA14">
+    <End Role="Users" Type="MyStorageModel.Store.Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Files" Type="MyStorageModel.Store.Files" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Files">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

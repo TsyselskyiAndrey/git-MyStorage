@@ -1,0 +1,687 @@
+﻿<Window x:Class="MyStorage_v02.Storage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyStorage_v02" xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:gif="https://github.com/XamlAnimatedGif/XamlAnimatedGif"
+        xmlns:gif2="http://wpfanimatedgif.codeplex.com"
+        mc:Ignorable="d"
+        Title="My Storage" Height="480" Width="900"
+        Icon="Images/icon.ico"
+        Name="window"
+        WindowStyle="None"
+        BorderThickness="3"
+        BorderBrush="#8457FF"
+        ResizeMode="CanResize" AllowsTransparency="True"
+        MinWidth="900" 
+        MinHeight="480" SizeChanged="Window_SizeChanged" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Closed="window_Closed">
+    <WindowChrome.WindowChrome>
+        <WindowChrome x:Name="chrome"
+        CaptionHeight="0"
+        ResizeBorderThickness="3" />
+    </WindowChrome.WindowChrome>
+    <Window.Resources>
+        <Style x:Key="TB" TargetType="TextBox">
+            <Setter Property="Background" Value="#636076"></Setter>
+            <Setter Property="Height" Value="35"></Setter>
+            <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+            <Setter Property="Foreground" Value="WhiteSmoke"></Setter>
+            <Setter Property="FontSize" Value="14"></Setter>
+            <Setter Property="BorderBrush" Value="#A4A1BA"></Setter>
+            <Setter Property="Padding" Value="10,0,0,0"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Grid x:Name="root" Height="{TemplateBinding Height}" Width="{TemplateBinding Width}" SnapsToDevicePixels="True">
+                            <Border x:Name="Background" BorderThickness="1" CornerRadius="20" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}"></Border>
+                            <ScrollViewer x:Name="PART_ContentHost" BorderThickness="0" Padding="{TemplateBinding Padding}" IsTabStop="False" Background="{x:Null}" TextElement.Foreground="{TemplateBinding Foreground}"></ScrollViewer>
+                        </Grid>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsKeyboardFocusWithin" Value="False">
+                                <Setter Property="BorderBrush" Value="#A4A1BA"></Setter>
+                                <Setter Property="Background" Value="#636076"></Setter>
+                                <Setter Property="Foreground" Value="WhiteSmoke"></Setter>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#8D80B0"></Setter>
+                                <Setter Property="BorderBrush" Value="AliceBlue"></Setter>
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocusWithin" Value="True">
+                                <Setter Property="BorderBrush" Value="AliceBlue"></Setter>
+                                <Setter Property="Background" Value="#6760A5"></Setter>
+                                <Setter Property="Foreground" Value="WhiteSmoke"></Setter>
+                            </Trigger>
+
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="Button"  x:Key="MyButtonStyle">
+            <Setter Property="Background" Value="#7B67B2"></Setter>
+            <Setter Property="Foreground" Value="#3B286E"></Setter>
+            <Setter Property="BorderBrush" Value="#3A2EA8"></Setter>
+            <Setter Property="FontFamily" Value="Segoe UI"></Setter>
+            <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+            <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border BorderThickness="1" CornerRadius="3" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}">
+                            <Grid>
+                                <ContentPresenter VerticalAlignment="{TemplateBinding VerticalContentAlignment}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" ContentSource="{TemplateBinding Content}"></ContentPresenter>
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#7958D4"></Setter>
+                    <Setter Property="Foreground" Value="AliceBlue"></Setter>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="BorderBrush" Value="#3A2EA8"></Setter>
+                    <Setter Property="Background" Value="#917DC9"></Setter>
+                </Trigger>
+            </Style.Triggers>
+            
+        </Style>
+        <Style TargetType="TabItem"  x:Key="MyTabitemStyle">
+            <Setter Property="Background" Value="Transparent"></Setter>
+            <Setter Property="Foreground" Value="White"></Setter>
+            <Setter Property="BorderThickness" Value="0"></Setter>
+            <Setter Property="BorderBrush" Value="Transparent"></Setter>
+            <Setter Property="FontFamily" Value="Segoe UI"></Setter>
+            <Setter Property="Width" Value="50"></Setter>
+            <Setter Property="Height" Value="50"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TabItem">
+                        <Border BorderThickness="1"  Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}">
+                            <Grid>
+                                <HeaderedContentControl VerticalAlignment="Center" HorizontalAlignment="Left" Content="{TemplateBinding Header}" Opacity="0.4"></HeaderedContentControl>
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#598054F9"></Setter>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TabItem">
+                                <Border BorderThickness="1"  Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}">
+                                    <Grid>
+                                        <HeaderedContentControl VerticalAlignment="Center" HorizontalAlignment="Left" Content="{TemplateBinding Header}"></HeaderedContentControl>
+                                    </Grid>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+                <Trigger Property="IsSelected" Value="True">
+                    <Setter Property="Background" Value="#8457FF"></Setter>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TabItem">
+                                <Border BorderThickness="1"  Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}">
+                                    <Grid>
+                                        <HeaderedContentControl VerticalAlignment="Center" HorizontalAlignment="Left" Content="{TemplateBinding Header}"></HeaderedContentControl>
+                                    </Grid>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+
+            </Style.Triggers>
+
+        </Style>
+        <Style TargetType="ScrollViewer" x:Key="MyScroll">
+            <Setter Property="HorizontalScrollBarVisibility" Value="Disabled"></Setter>
+            <Setter Property="VerticalScrollBarVisibility" Value="Disabled"></Setter>
+            <EventSetter Event="MouseEnter" Handler="TabMouseEnter"></EventSetter>
+            <EventSetter Event="MouseLeave" Handler="TabMouseLeave"></EventSetter>
+        </Style>
+        <Style TargetType="{x:Type TabControl}" x:Key="MyTabControl">
+            <Setter Property="Padding" Value="4,4,4,4"/>
+            <Setter Property="BorderThickness" Value="1,0,0,0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TabControl">
+                        <DockPanel>
+                            <ScrollViewer x:Name="MyScroll"  DockPanel.Dock="Left" Style="{StaticResource MyScroll}">
+                                <DockPanel LastChildFill="False" IsItemsHost="true"/>
+                            </ScrollViewer>
+                            <Border x:Name="ContentPanel" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Grid.Column="1" KeyboardNavigation.DirectionalNavigation="Contained" Grid.Row="0" KeyboardNavigation.TabIndex="2" KeyboardNavigation.TabNavigation="Local" >
+                                <ContentPresenter MouseEnter="CPMouseEnter" MouseLeave="CPMouseLeave" x:Name="PART_SelectedContentHost" ContentSource="SelectedContent" Margin="{TemplateBinding Padding}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"></ContentPresenter>
+                            </Border>
+                        </DockPanel>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="RepeatButton" x:Key="RB1">
+            <Setter Property="Background" Value="#7B67B2"></Setter>
+            <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+            <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+            <Setter Property="BorderBrush" Value="Transparent"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RepeatButton">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5.4"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="5.4"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Border Grid.Column="0"></Border>
+                            <Border Grid.Column="2"></Border>
+                            <Border CornerRadius="1" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" Grid.Column="1"></Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FFAF94FC"></Setter>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#FF3D2B74"></Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="RepeatButton"  x:Key="RB2">
+            <Setter Property="Background" Value="Transparent"></Setter>
+            <Setter Property="BorderBrush" Value="Transparent"></Setter>
+            <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+            <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RepeatButton">
+                        <Border BorderThickness="1" CornerRadius="3" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}">
+                            <Grid>
+                                <ContentPresenter VerticalAlignment="{TemplateBinding VerticalContentAlignment}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" ContentSource="{TemplateBinding Content}"></ContentPresenter>
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+        </Style>
+        <Style TargetType="ScrollBar">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ScrollBar}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition MaxHeight="12"/>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition MaxHeight="12"/>
+                            </Grid.RowDefinitions>
+
+                            <RepeatButton Style="{StaticResource RB2}" Command="{x:Static ScrollBar.LineUpCommand}">
+                                <Image Name="up">
+                                    <Image.Style>
+                                        <Style TargetType="{x:Type Image}">
+                                            <Setter Property="Source" Value="Images/up2.png"></Setter>
+                                            <Setter Property="Opacity" Value="0.7"></Setter>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsMouseOver, ElementName=up}"
+                                             Value="true">
+                                                    <Setter Property="Source" Value="Images/up1.png"></Setter>
+                                                    <Setter Property="Opacity" Value="1"></Setter>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Image.Style>
+                                </Image>
+                            </RepeatButton>
+                            <Track Name="PART_Track" Grid.Row="1" IsDirectionReversed="True">
+                                <Track.DecreaseRepeatButton>
+                                    <RepeatButton Style="{StaticResource RB1}" Command="{x:Static ScrollBar.PageUpCommand}"/>
+                                </Track.DecreaseRepeatButton>
+                                <Track.IncreaseRepeatButton>
+                                    <RepeatButton Style="{StaticResource RB1}" Command="{x:Static ScrollBar.PageDownCommand}"/>
+                                </Track.IncreaseRepeatButton>
+                                <Track.Thumb>
+                                    <Thumb>
+                                        <Thumb.Style>
+                                            <Style TargetType="Thumb">
+                                                <Setter Property="Template">
+                                                    <Setter.Value>
+                                                        <ControlTemplate>
+                                                            <Border Width="12" Background="#8457FF" CornerRadius="3.5" BorderThickness="2" BorderBrush="#FFABA2FC"></Border>
+                                                        </ControlTemplate>
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Style>
+                                        </Thumb.Style>
+                                    </Thumb>
+                                </Track.Thumb>
+                            </Track>
+                            <RepeatButton Style="{StaticResource RB2}" Grid.Row="2" Command="{x:Static ScrollBar.LineDownCommand}">
+                                <Image Name="down">
+                                    <Image.Style>
+                                        <Style TargetType="{x:Type Image}">
+                                            <Setter Property="Source" Value="Images/down2.png"></Setter>
+                                            <Setter Property="Opacity" Value="0.7"></Setter>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsMouseOver, ElementName=down}"
+                                             Value="true">
+                                                    <Setter Property="Source" Value="Images/down1.png"></Setter>
+                                                    <Setter Property="Opacity" Value="1"></Setter>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Image.Style>
+                                </Image>
+                            </RepeatButton>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF393D46" Offset="0"/>
+            <GradientStop Color="#FF393D46" Offset="0.992"/>
+            <GradientStop Color="#FF5A5F6B" Offset="0.442"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.Resources>
+            <local:SizeConverter x:Key="SizeConverter"></local:SizeConverter>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Name="ToolBar" Background="Transparent" Grid.Row="0" MouseDown="ToolBar_MouseDown">
+            <Polygon Name="Plg" Fill="#8457FF" Opacity="0.5"></Polygon>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Image Name="line" MouseDown="line_MouseDown">
+                    <Image.Style>
+                        <Style TargetType="{x:Type Image}">
+                            <Setter Property="Source" Value="Images/l1.png"></Setter>
+                            <Setter Property="Width" Value="13"></Setter>
+                            <Setter Property="Height" Value="10"></Setter>
+                            <Setter Property="Opacity" Value="0.3"></Setter>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsMouseOver, ElementName=line}"
+                                             Value="true">
+                                    <Setter Property="Source" Value="Images/l2.png"></Setter>
+                                    <Setter Property="Width" Value="16"></Setter>
+                                    <Setter Property="Height" Value="13"></Setter>
+                                    <Setter Property="Opacity" Value="1"></Setter>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Image.Style>
+                </Image>
+                <Image Name="square" MouseDown="square_MouseDown">
+                    <Image.Style>
+                        <Style TargetType="{x:Type Image}">
+                            <Setter Property="Source" Value="Images/square1.png"></Setter>
+                            <Setter Property="Width" Value="16"></Setter>
+                            <Setter Property="Height" Value="16"></Setter>
+                            <Setter Property="Opacity" Value="0.3"></Setter>
+                            <Setter Property="Margin" Value="12,0,0,0"></Setter>
+                            <Setter Property="Stretch" Value="Fill"></Setter>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsMouseOver, ElementName=square}"
+                                             Value="true">
+                                    <Setter Property="Source" Value="Images/square2.png"></Setter>
+                                    <Setter Property="Width" Value="16"></Setter>
+                                    <Setter Property="Height" Value="16"></Setter>
+                                    <Setter Property="Opacity" Value="1"></Setter>
+                                    <Setter Property="Margin" Value="12,0,0,0"></Setter>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Image.Style>
+                </Image>
+                <Image Name="cross" MouseDown="cross_MouseDown">
+                    <Image.Style>
+                        <Style TargetType="{x:Type Image}">
+                            <Setter Property="Source" Value="Images/c1.png"></Setter>
+                            <Setter Property="Width" Value="13"></Setter>
+                            <Setter Property="Height" Value="10"></Setter>
+                            <Setter Property="Opacity" Value="0.3"></Setter>
+                            <Setter Property="Margin" Value="8,0,12,1"></Setter>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsMouseOver, ElementName=cross}"
+                                             Value="true">
+                                    <Setter Property="Source" Value="Images/c2.png"></Setter>
+                                    <Setter Property="Width" Value="16"></Setter>
+                                    <Setter Property="Height" Value="13"></Setter>
+                                    <Setter Property="Opacity" Value="1"></Setter>
+                                    <Setter Property="Margin" Value="7,0,10,0"></Setter>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Image.Style>
+                </Image>
+
+            </StackPanel>
+        </Grid>
+        <DockPanel Grid.Row="2" Background="#33000000">
+            <TabControl Style="{StaticResource MyTabControl}" SelectionChanged="TabControl_SelectionChanged" Name="tab">
+                <TabControl.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF393D46" Offset="0"/>
+                        <GradientStop Color="#FF393D46" Offset="0.992"/>
+                        <GradientStop Color="#FF5A5F6B" Offset="0.442"/>
+                    </LinearGradientBrush>
+                </TabControl.Background>
+                <TabItem Style="{StaticResource MyTabitemStyle}" DockPanel.Dock="Top" Name="ti1" Margin="0,15,0,0">
+                    <TabItem.Header>
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <Image Source="Images/hdd.png" Width="49" Height="35"></Image>
+                            <TextBlock Height="40" Text="Storage" Opacity="0" FontSize="21" Margin="15,0,0,0" Name="ti1_txt" Padding="0,4,0,0"></TextBlock>
+                        </StackPanel>
+                    </TabItem.Header>
+                    
+                    <ScrollViewer Name="sv" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" AllowDrop="True" HorizontalAlignment="Right" PreviewDragEnter="OnDragOver" PreviewDragOver="OnDragOver" PreviewDrop="wp_Drop" PreviewDragLeave="sv_PreviewDragLeave">
+                        <StackPanel>
+                            <StackPanel Visibility="Collapsed" Name="svSearch1" Margin="15,10,0,0" Orientation="Horizontal">
+                                <TextBox Padding="43,0,0,0" TextChanged="tbSearch1_TextChanged" FontWeight="DemiBold"  Name="tbSearch1" Style="{StaticResource TB}"  Width="300" VerticalAlignment="Top" HorizontalAlignment="Left" Text=""></TextBox>
+                                <Image Source="Images/searchpng.png" IsHitTestVisible="False" Margin="-550,0,0,0" Width="23"></Image>
+                            </StackPanel>
+                            
+                            <WrapPanel Name="wp" Margin="0,8,0,5" VerticalAlignment="Top" HorizontalAlignment="Left"></WrapPanel>
+                            <Image Name="load" Visibility="Collapsed" Width="300"
+                            gif:AnimationBehavior.SourceUri="Images/loadanimation.gif" />
+                        </StackPanel>
+                        
+                    </ScrollViewer>
+                </TabItem>
+                <TabItem Style="{StaticResource MyTabitemStyle}" DockPanel.Dock="Top" Name="ti2">
+                    <TabItem.Header>
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <Image Source="Images/recent.png" Width="49" Height="40"></Image>
+                            <TextBlock Text="Recent Files" Opacity="0" FontSize="21" Margin="15,0,0,0" Name="ti2_txt" Padding="0,4,0,0"></TextBlock>
+                        </StackPanel>
+                    </TabItem.Header>
+                    <ScrollViewer Name="sv5" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" HorizontalAlignment="Right">
+                        <StackPanel>
+                            <StackPanel Visibility="Collapsed" Name="svSearch2" Margin="15,10,0,0" Orientation="Horizontal">
+                                <TextBox Padding="43,0,0,0" TextChanged="tbSearch2_TextChanged" FontWeight="DemiBold"  Name="tbSearch2" Style="{StaticResource TB}"  Width="300" VerticalAlignment="Top" HorizontalAlignment="Left" Text=""></TextBox>
+                                <Image Source="Images/searchpng.png" IsHitTestVisible="False" Margin="-550,0,0,0" Width="23"></Image>
+                            </StackPanel>
+                            <WrapPanel Name="wp5" Margin="0,5,0,5" VerticalAlignment="Top" HorizontalAlignment="Left"></WrapPanel>
+                            <Image Name="load5" Visibility="Collapsed" Width="300"
+                            gif:AnimationBehavior.SourceUri="Images/loadanimation.gif" />
+                        </StackPanel>
+
+                    </ScrollViewer>
+                </TabItem>
+                <TabItem Style="{StaticResource MyTabitemStyle}" DockPanel.Dock="Top" Name="ti3">
+                    <TabItem.Header>
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <Image Source="Images/star2.png" Width="49" Height="40"></Image>
+                            <TextBlock Text="Tagged Files" Opacity="0" FontSize="21" Margin="15,0,0,0" Name="ti3_txt" Padding="0,4,0,0"></TextBlock>
+                        </StackPanel>
+                    </TabItem.Header>
+                    <ScrollViewer Name="sv4" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" HorizontalAlignment="Right">
+                        <StackPanel>
+                            <StackPanel Visibility="Collapsed" Name="svSearch3" Margin="15,10,0,0" Orientation="Horizontal">
+                                <TextBox Padding="43,0,0,0" TextChanged="tbSearch3_TextChanged" FontWeight="DemiBold"  Name="tbSearch3" Style="{StaticResource TB}"  Width="300" VerticalAlignment="Top" HorizontalAlignment="Left" Text=""></TextBox>
+                                <Image Source="Images/searchpng.png" IsHitTestVisible="False" Margin="-550,0,0,0" Width="23"></Image>
+                            </StackPanel>
+                            <WrapPanel Name="wp4" Margin="0,5,0,5" VerticalAlignment="Top" HorizontalAlignment="Left"></WrapPanel>
+                            <Image Name="load4" Visibility="Collapsed" Width="300"
+                            gif:AnimationBehavior.SourceUri="Images/loadanimation.gif" />
+                        </StackPanel>
+
+                    </ScrollViewer>
+                </TabItem>
+                
+                <TabItem Style="{StaticResource MyTabitemStyle}" DockPanel.Dock="Top" Name="ti4">
+                    <TabItem.Header>
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <Image Source="Images/trash.png" Width="49" Height="30"></Image>
+                            <TextBlock Text="Trash" Opacity="0" Height="40" FontSize="21" Margin="15,0,0,0" Name="ti4_txt" Padding="0,4,0,0"></TextBlock>
+                        </StackPanel>
+                    </TabItem.Header>
+                    <ScrollViewer Name="sv3" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" HorizontalAlignment="Right">
+                        <StackPanel>
+                            <StackPanel Visibility="Collapsed" Name="svSearch4" Margin="15,10,0,0" Orientation="Horizontal">
+                                <TextBox Padding="43,0,0,0" TextChanged="tbSearch4_TextChanged" FontWeight="DemiBold"  Name="tbSearch4" Style="{StaticResource TB}"  Width="300" VerticalAlignment="Top" HorizontalAlignment="Left" Text=""></TextBox>
+                                <Image Source="Images/searchpng.png" IsHitTestVisible="False" Margin="-550,0,0,0" Width="23"></Image>
+                            </StackPanel>
+                            <WrapPanel Name="wp3" Margin="0,5,0,5" VerticalAlignment="Top" HorizontalAlignment="Left"></WrapPanel>
+                            <Image Name="load3" Visibility="Collapsed" Width="300"
+                            gif:AnimationBehavior.SourceUri="Images/loadanimation.gif" />
+                        </StackPanel>
+
+                    </ScrollViewer>
+
+                </TabItem>
+
+                <TabItem DockPanel.Dock="Top" Name="ti6" Focusable="False">
+                    <TabItem.Style>
+                        <Style TargetType="TabItem">
+                            <Setter Property="Background" Value="Transparent"></Setter>
+                            <Setter Property="Foreground" Value="White"></Setter>
+                            <Setter Property="BorderThickness" Value="0"></Setter>
+                            <Setter Property="BorderBrush" Value="Transparent"></Setter>
+                            <Setter Property="FontFamily" Value="Segoe UI"></Setter>
+                            <Setter Property="Width" Value="50"></Setter>
+
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="TabItem">
+                                        <Border BorderThickness="1"  Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}">
+                                            <Grid>
+                                                <HeaderedContentControl VerticalAlignment="Top" HorizontalAlignment="Left" Content="{TemplateBinding Header}"></HeaderedContentControl>
+                                            </Grid>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+
+                        </Style>
+                    </TabItem.Style>
+                    <TabItem.Header>
+                        <Canvas Width="49" VerticalAlignment="Center" Name="canvas">
+                            <Button Click="addBtn_Click" Name="addBtn" Opacity="0" Margin="4" Width="190" MouseEnter="addBtn_MouseEnter" MouseLeave="addBtn_MouseLeave" Panel.ZIndex="2">
+                                <Button.Style>
+                                    <Style TargetType="Button">
+                                        <Setter Property="Background" Value="#FF634AC2"></Setter>
+                                        <Setter Property="Foreground" Value="#B2F0F8FF"></Setter>
+                                        <Setter Property="BorderBrush" Value="#8457FF"></Setter>
+                                        <Setter Property="FontFamily" Value="Segoe UI"></Setter>
+                                        <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+                                        <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="Button">
+                                                    <Border BorderThickness="1" CornerRadius="20" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}">
+                                                        <Grid>
+                                                            <ContentPresenter VerticalAlignment="{TemplateBinding VerticalContentAlignment}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" ContentSource="{TemplateBinding Content}"></ContentPresenter>
+                                                        </Grid>
+                                                    </Border>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Background" Value="#FF6A40DF"></Setter>
+                                                <Setter Property="Foreground" Value="AliceBlue"></Setter>
+                                            </Trigger>
+                                            <Trigger Property="IsPressed" Value="True">
+                                                <Setter Property="BorderBrush" Value="#3A2EA8"></Setter>
+                                                <Setter Property="Background" Value="#917DC9"></Setter>
+                                            </Trigger>
+                                        </Style.Triggers>
+
+                                    </Style>
+                                </Button.Style>
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="Images/add_sign.png" Width="49" Height="30" Margin="-59,0,0,0" Name="img7" Opacity="0.7" ></Image>
+                                    <TextBlock Text="Add File"  Height="40" FontSize="21" Margin="15,0,0,0" Padding="0,4,0,0"></TextBlock>
+                                </StackPanel>
+                            </Button>
+                            <Image Source="Images/add_sign.png" Width="49" Height="30" Margin="0,10,0,0" Name="img6" Opacity="0.4" Panel.ZIndex="1"></Image>
+                            <Grid HorizontalAlignment="Center" Margin="9 55 0 0" Opacity="0" Name="progress">
+                                <Grid Margin="0,5" Height="10" Width="182">
+                                    <Border x:Name="MaskBorder" CornerRadius="5" Background="#C0C0C0" Height="10"/>
+                                    <ProgressBar Value="{Binding Memory}" Maximum="{Binding MaxMemory}" BorderBrush="#FF533791" BorderThickness="0.001" Background="{x:Null}" Foreground="#8457FF">
+                                        <ProgressBar.Effect>
+                                            <DropShadowEffect ShadowDepth="0" Color="#8457FF" Opacity="1" BlurRadius="20"/>
+                                        </ProgressBar.Effect>
+                                        <ProgressBar.OpacityMask>
+                                            <VisualBrush Visual="{Binding ElementName=MaskBorder}"/>
+                                        </ProgressBar.OpacityMask>
+                                    </ProgressBar>
+
+                                </Grid>
+                            </Grid>
+                            <TextBlock Opacity="0" Name="tbSize" TextWrapping="Wrap" Foreground="#f9fdfc" FontFamily="Fonts/MyFont.ttf" FontSize="12" Margin="10,80,10,0" Width="182">
+                                <Run FontWeight="DemiBold" Name="tb_fullSize" Text="{Binding Memory, Converter={StaticResource SizeConverter}}"/>
+                                <Run FontWeight="Light" Text=" out of "/>
+                                <Run FontWeight="DemiBold" Name="tb_maxSize" Text="{Binding MaxMemory, Converter={StaticResource SizeConverter}}"/>
+                                <Run FontWeight="Light" Text=" used"/>
+                            </TextBlock>
+                        </Canvas>
+                    </TabItem.Header>
+                </TabItem>
+                
+                <TabItem DockPanel.Dock="Bottom" Name="ti5" Margin="0,0,0,15">
+                    <TabItem.Style>
+                        <Style TargetType="TabItem">
+                            <Setter Property="Background" Value="Transparent"></Setter>
+                            <Setter Property="Foreground" Value="White"></Setter>
+                            <Setter Property="BorderThickness" Value="0"></Setter>
+                            <Setter Property="BorderBrush" Value="Transparent"></Setter>
+                            <Setter Property="FontFamily" Value="Segoe UI"></Setter>
+                            <Setter Property="Width" Value="50"></Setter>
+                            <Setter Property="Height" Value="50"></Setter>
+                            <EventSetter Event="GotFocus" Handler="TabItem_GotFocus"></EventSetter>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="TabItem">
+                                        <Border BorderThickness="1"  Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}">
+                                            <Grid>
+                                                <HeaderedContentControl VerticalAlignment="Center" HorizontalAlignment="Left" Content="{TemplateBinding Header}" Opacity="0.4"></HeaderedContentControl>
+                                            </Grid>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#598054F9"></Setter>
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="TabItem">
+                                                <Border BorderThickness="1"  Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}">
+                                                    <Grid>
+                                                        <HeaderedContentControl VerticalAlignment="Center" HorizontalAlignment="Left" Content="{TemplateBinding Header}"></HeaderedContentControl>
+                                                    </Grid>
+                                                </Border>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                                <Trigger Property="IsSelected" Value="True">
+                                    <Setter Property="Background" Value="#8457FF"></Setter>
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="TabItem">
+                                                <Border BorderThickness="1"  Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}">
+                                                    <Grid>
+                                                        <HeaderedContentControl VerticalAlignment="Center" HorizontalAlignment="Left" Content="{TemplateBinding Header}"></HeaderedContentControl>
+                                                    </Grid>
+                                                </Border>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                                
+                            </Style.Triggers>
+
+                        </Style>
+                    </TabItem.Style>
+                    <TabItem.Header>
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <Image Source="Images/exit.png" Width="49" Height="30"></Image>
+                            <TextBlock Height="40" Text="Exit" Opacity="0" FontSize="21" Margin="15,0,0,0" Name="ti5_txt" Padding="0,4,0,0"></TextBlock>
+                        </StackPanel>
+                        
+                    </TabItem.Header>
+                </TabItem>
+
+
+                <TabItem DockPanel.Dock="Bottom" Name="ti7" Margin="0,0,0,3">
+                    <TabItem.Style>
+                        <Style TargetType="TabItem">
+                            <Setter Property="Background" Value="Transparent"></Setter>
+                            <Setter Property="Foreground" Value="White"></Setter>
+                            <Setter Property="BorderThickness" Value="0"></Setter>
+                            <Setter Property="Opacity" Value="0.4"></Setter>
+                            <Setter Property="BorderBrush" Value="Transparent"></Setter>
+                            <Setter Property="FontFamily" Value="Segoe UI"></Setter>
+                            <Setter Property="Width" Value="50"></Setter>
+                            <Setter Property="Height" Value="50"></Setter>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="TabItem">
+                                        <Border BorderThickness="1"  Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}">
+                                            <Grid>
+                                                <HeaderedContentControl VerticalAlignment="Center" HorizontalAlignment="Left" Content="{TemplateBinding Header}"></HeaderedContentControl>
+                                            </Grid>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#598054F9"></Setter>
+                                    <Setter Property="Opacity" Value="1"></Setter>
+                                </Trigger>
+                                <Trigger Property="IsSelected" Value="True">
+                                    <Setter Property="Background" Value="#8457FF"></Setter>
+                                    <Setter Property="Opacity" Value="1"></Setter>
+                                </Trigger>
+
+                            </Style.Triggers>
+
+                        </Style>
+                    </TabItem.Style>
+                    <TabItem.Header>
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <Image Visibility="Collapsed" Name="DownloadGif" gif2:ImageBehavior.RepeatBehavior="Forever" gif2:ImageBehavior.AnimatedSource="Images/LOADGIF.gif" Width="40" Margin="5,0,0,0" Height="40" Stretch="Fill"></Image>
+                            <Image Visibility="Visible" Name ="DownloadImg" Source="Images/LOAD.png" Width="50" Margin="0,0,0,0" Height="48" Stretch="Fill"></Image>
+                            <TextBlock Height="40" Text="Downloads" Opacity="0" FontSize="21" Margin="15,0,0,0" Name="ti7_txt" Padding="0,4,0,0"></TextBlock>
+                        </StackPanel>
+
+                    </TabItem.Header>
+
+                    <ScrollViewer Name="sv2" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto"  HorizontalAlignment="Right" >
+                        
+                        <StackPanel Name="spHistory" Margin="0,5,5,5" Orientation="Vertical">
+                            
+                        </StackPanel>
+
+                    </ScrollViewer>
+
+                </TabItem>
+
+            </TabControl>
+        </DockPanel>
+        
+    </Grid>
+</Window>

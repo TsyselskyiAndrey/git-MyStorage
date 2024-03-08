@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="MyStorage_v02.ProcessControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MyStorage_v02"
+             xmlns:gif="https://github.com/XamlAnimatedGif/XamlAnimatedGif"
+             mc:Ignorable="d"
+             d:DesignHeight="90" Height="90" d:DesignWidth="580" Background="#32000000" Margin="0,5">
+    <Grid  Margin="0,5">
+        <Grid.Resources>
+            <local:SizeConverter x:Key="SizeConverter"></local:SizeConverter>
+            <local:ConverterMode x:Key="ModeConverter"></local:ConverterMode>
+        </Grid.Resources>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Margin="10" Visibility="Visible" Name="gif"
+       gif:AnimationBehavior.SourceUri="{Binding Mode, Converter={StaticResource ModeConverter}}"/>
+        <Image Margin="10" Visibility="Collapsed" Name="img" Source="Images/greentick.png"/>
+        
+        <StackPanel Grid.Column="1" >
+            <DockPanel  Margin="7,0">
+                <TextBlock DockPanel.Dock="Left" FontSize="25" FontFamily="Fonts/MyFont.ttf" Foreground="AliceBlue" Width="330" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis" Text="{Binding Title}"></TextBlock>
+                <TextBlock FontSize="20"  DockPanel.Dock="Right"  Foreground="AliceBlue" Width="150" VerticalAlignment="Center" Text="{Binding Date, StringFormat='MM/dd/yy H:mm'}" TextAlignment="Right"></TextBlock>
+                <TextBlock Width="0"></TextBlock>
+            </DockPanel>
+            <Grid Name="progress" Margin="6,2">
+                <Grid Margin="0,5" Height="15">
+                    <Border x:Name="MaskBorder" CornerRadius="10" Background="#C0C0C0" Height="15"/>
+                    <ProgressBar ValueChanged="pb_ValueChanged" Value="{Binding Value}" Maximum="100" BorderBrush="#FF533791" BorderThickness="0.001" Background="{x:Null}" Foreground="#8457FF" x:Name="pb">
+                        <ProgressBar.Effect>
+                            <DropShadowEffect ShadowDepth="0" Color="#8457FF" Opacity="1" BlurRadius="20"/>
+                        </ProgressBar.Effect>
+                        <ProgressBar.OpacityMask>
+                            <VisualBrush Visual="{Binding ElementName=MaskBorder}"/>
+                        </ProgressBar.OpacityMask>
+                    </ProgressBar>
+                    
+                </Grid>
+            </Grid>
+            <DockPanel Margin="7,0">
+                <TextBlock DockPanel.Dock="Left" FontSize="15" FontFamily="Fonts/MyFont.ttf" VerticalAlignment="Top" Foreground="AliceBlue" Width="150" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis" Text="{Binding Size, Converter={StaticResource SizeConverter}}"></TextBlock>
+                <TextBlock FontSize="15" DockPanel.Dock="Right"  Foreground="AliceBlue" Width="150" VerticalAlignment="Top" Text="{Binding MaximumSize, Converter={StaticResource SizeConverter}}"  TextAlignment="Right"></TextBlock>
+                <TextBlock TextAlignment="Center" FontSize="13" Text="{Binding ElementName=pb, Path=Value, StringFormat={}{0:0}%}" Foreground="AliceBlue"></TextBlock>
+            </DockPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

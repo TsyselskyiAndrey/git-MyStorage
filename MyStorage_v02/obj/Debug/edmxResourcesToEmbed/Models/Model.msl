@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MyStorageModelStoreContainer" CdmEntityContainer="MyStorageEntities">
+    <EntitySetMapping Name="Files">
+      <EntityTypeMapping TypeName="MyStorageModel.Files">
+        <MappingFragment StoreEntitySet="Files">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="SizeBytes" ColumnName="SizeBytes" />
+          <ScalarProperty Name="DateOfAddition" ColumnName="DateOfAddition" />
+          <ScalarProperty Name="DateOfRemoval" ColumnName="DateOfRemoval" />
+          <ScalarProperty Name="IsFavorite" ColumnName="IsFavorite" />
+          <ScalarProperty Name="IsRemoved" ColumnName="IsRemoved" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="MyStorageModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="MaxSize" ColumnName="MaxSize" />
+          <ScalarProperty Name="FullSize" ColumnName="FullSize" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

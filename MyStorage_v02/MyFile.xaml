@@ -1,0 +1,145 @@
+﻿<UserControl x:Class="MyStorage_v02.MyFile" Margin="4"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MyStorage_v02"
+             mc:Ignorable="d" Width="208" Height="308">
+    <UserControl.Resources>
+        <Style x:Key="MenuSeparatorStyle" TargetType="{x:Type Separator}">
+            <Setter Property="SnapsToDevicePixels" Value="True"/>
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="IsTabStop" Value="False"/>
+            <Setter Property="KeyboardNavigation.IsTabStop" Value="False"/>
+            <Setter Property="KeyboardNavigation.TabNavigation" Value="None"/>
+            <Setter Property="Background" Value="#323232"/>
+            <Setter Property="Height" Value="5"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Separator}">
+                        <Border Height="5" Margin="-2,2" VerticalAlignment="Center" Background="#FF464646"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="{x:Type MenuItem}">
+            <Setter Property="SnapsToDevicePixels" Value="True"/>
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="Foreground" Value="#FF48347F"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type MenuItem}">
+                        <Grid Name="Root" Height="27" Background="AliceBlue">
+                            <ContentPresenter Name="HeaderHost" Margin="10,0,0,0" ContentSource="Header" RecognizesAccessKey="True" HorizontalAlignment="Left" VerticalAlignment="Center"
+                      TextOptions.TextRenderingMode="ClearType" TextBlock.FontSize="12" TextBlock.Foreground="{TemplateBinding Foreground}" TextOptions.TextFormattingMode="Display"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Root" Property="Background" Value="#7FF0F8FF"/>
+                                <Setter Property="Foreground" Value="AliceBlue"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="Root" Property="Background" Value="#4CF0F8FF"/>
+                                <Setter Property="Foreground" Value="AliceBlue"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="{x:Type ContextMenu}">
+            <Setter Property="SnapsToDevicePixels" Value="True"/>
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Width" Value="170"/>
+            <Setter Property="HasDropShadow" Value="True"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ContextMenu}">
+                        <Grid Background="Transparent">
+                            <Border x:Name="Border" Margin="0,0,5,5" Background="#FF573CA0" BorderThickness="0">
+                                <StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Cycle" Margin="2"/>
+                                <Border.Effect>
+                                    <DropShadowEffect BlurRadius="5" ShadowDepth="3" Color="Black" Opacity="0.5"/>
+                                </Border.Effect>
+                            </Border>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="HasDropShadow" Value="true">
+                                <Setter TargetName="Border" Property="CornerRadius" Value="5" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    
+    
+    <Canvas Name="myCanvas" Background="Transparent">
+        <Canvas.Resources>
+            <local:SizeConverter x:Key="SizeConverter"></local:SizeConverter>
+            <local:ExtensionConverter x:Key="ExtensionConverter"></local:ExtensionConverter>
+        </Canvas.Resources>
+        <Border Canvas.Left="8" Canvas.Top="8" BorderThickness="3" BorderBrush="#FF7A49FF" Name="border" Background="AliceBlue" Width="200" Height="300" MouseEnter="B_MouseEnter" MouseLeave="B_MouseLeave">
+            <Border.ContextMenu>
+                <ContextMenu Name="MyMenu">
+                    <MenuItem Name="dl" Visibility="Visible" Header=" Download" Margin="3,3,3,0" Click="dl_Click"/>
+                    <MenuItem Header=" Delete" Margin="0,0" Click="MenuItem_Click"/>
+                    <MenuItem Name="res" Visibility="Collapsed" Header=" Restore" Margin="0,0" Click="res_Click"/>
+                    <MenuItem Name="adfav" Visibility="Visible" Header=" Add to favorites" Margin="0,0" Click="adfav_Click"/>
+                    <Separator Style="{StaticResource MenuSeparatorStyle}"/>
+                    <MenuItem Name="ren" Visibility="Visible" Header="Rename" Margin="3,0,3,3" Click="ren_Click"/>
+                </ContextMenu>
+            </Border.ContextMenu>
+            
+            <Border.Triggers>
+                <EventTrigger RoutedEvent="Border.MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation
+                                     Duration="0:0:0.15"
+                                     Storyboard.TargetName="dropEffect"
+                                     Storyboard.TargetProperty="ShadowDepth"
+                                     To="10" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="Border.MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation
+                                     Duration="0:0:0.15"
+                                     Storyboard.TargetName="dropEffect"
+                                     Storyboard.TargetProperty="ShadowDepth"
+                                     To="0" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Border.Triggers>
+            <Border.Effect>
+                <DropShadowEffect x:Name ="dropEffect"  Color="#FFDED4FF" Opacity="0.6" RenderingBias="Quality" Direction="315" ShadowDepth="0" BlurRadius="3.5"></DropShadowEffect>
+            </Border.Effect>
+            <Canvas>
+                <Image Source="{Binding Type, Converter={StaticResource ExtensionConverter}}" Width="180" Canvas.Top="6" Canvas.Left="7"></Image>
+
+                <DockPanel Width="194" Height="40" Canvas.Top="195" LastChildFill="False" Background="Transparent">
+                    <Image Margin="5,0,0,0" Name="star" DockPanel.Dock="Left" MouseDown="star_MouseDown" Width="35"  Height="32" MouseEnter="star_MouseEnter" MouseLeave="star_MouseLeave" Stretch="Fill"></Image>
+                    <Image Margin="0,0,-3,0" Source="Images/trashbox1.png" Name="trash" DockPanel.Dock="Right" MouseDown="trash_MouseDown" Width="40"  Height="35" MouseEnter="trash_MouseEnter" MouseLeave="trash_MouseLeave" Stretch="Fill"></Image>
+                    <Image Margin="0,0,-3,0" Source="Images/download1.png" Name="download" DockPanel.Dock="Right" MouseDown="download_MouseDown" Width="35"  Height="30" MouseEnter="download_MouseEnter" MouseLeave="download_MouseLeave" Stretch="Fill"></Image>
+                    <Image Margin="0,0,-3,0" Source="Images/restore1.png" Name="restore" DockPanel.Dock="Right" MouseDown="restore_MouseDown" Width="35"  Height="30" MouseEnter="restore_MouseEnter" MouseLeave="restore_MouseLeave" Stretch="Fill" Visibility="Collapsed"></Image>
+                </DockPanel>
+                <StackPanel Orientation="Vertical" Width="194" Height="59" Canvas.Top="235" Background="Black" Opacity="0.4">
+                    <TextBlock FontSize="25" Margin="5,0" Foreground="AliceBlue" Width="188" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis" Text="{Binding Title}"></TextBlock>
+                    <StackPanel Orientation="Horizontal" Margin="5,5,5,0">
+                        <TextBlock FontSize="11"  Foreground="AliceBlue" Width="95" TextWrapping="WrapWithOverflow" TextTrimming="CharacterEllipsis" Text="{Binding Size, Converter={StaticResource SizeConverter}}"></TextBlock>
+                        <TextBlock FontSize="11"  Foreground="AliceBlue" Width="88" TextWrapping="WrapWithOverflow" TextTrimming="CharacterEllipsis" Text="{Binding AddDate, StringFormat='MM/dd/yy H:mm'}" TextAlignment="Right"></TextBlock>
+                    </StackPanel>
+                    
+                </StackPanel>
+            </Canvas>
+
+        </Border>
+
+    </Canvas>
+</UserControl>
