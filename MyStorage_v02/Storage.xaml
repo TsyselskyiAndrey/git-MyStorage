@@ -15,7 +15,8 @@
         BorderBrush="#8457FF"
         ResizeMode="CanResize" AllowsTransparency="True"
         MinWidth="900" 
-        MinHeight="480" SizeChanged="Window_SizeChanged" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Closed="window_Closed">
+        MinHeight="480" SizeChanged="Window_SizeChanged" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Closed="window_Closed"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
     <WindowChrome.WindowChrome>
         <WindowChrome x:Name="chrome"
         CaptionHeight="0"
@@ -88,7 +89,7 @@
                     <Setter Property="Background" Value="#917DC9"></Setter>
                 </Trigger>
             </Style.Triggers>
-            
+
         </Style>
         <Style TargetType="TabItem"  x:Key="MyTabitemStyle">
             <Setter Property="Background" Value="Transparent"></Setter>
@@ -373,7 +374,7 @@
 
             </StackPanel>
         </Grid>
-        <DockPanel Grid.Row="2" Background="#33000000">
+        <DockPanel Grid.Row="1" Background="#33000000">
             <TabControl Style="{StaticResource MyTabControl}" SelectionChanged="TabControl_SelectionChanged" Name="tab">
                 <TabControl.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -389,19 +390,28 @@
                             <TextBlock Height="40" Text="Storage" Opacity="0" FontSize="21" Margin="15,0,0,0" Name="ti1_txt" Padding="0,4,0,0"></TextBlock>
                         </StackPanel>
                     </TabItem.Header>
-                    
+
                     <ScrollViewer Name="sv" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" AllowDrop="True" HorizontalAlignment="Right" PreviewDragEnter="OnDragOver" PreviewDragOver="OnDragOver" PreviewDrop="wp_Drop" PreviewDragLeave="sv_PreviewDragLeave">
                         <StackPanel>
-                            <StackPanel Visibility="Collapsed" Name="svSearch1" Margin="15,10,0,0" Orientation="Horizontal">
-                                <TextBox Padding="43,0,0,0" TextChanged="tbSearch1_TextChanged" FontWeight="DemiBold"  Name="tbSearch1" Style="{StaticResource TB}"  Width="300" VerticalAlignment="Top" HorizontalAlignment="Left" Text=""></TextBox>
-                                <Image Source="Images/searchpng.png" IsHitTestVisible="False" Margin="-550,0,0,0" Width="23"></Image>
+
+                            <StackPanel Visibility="Collapsed" Name="svSearch1" Margin="15,15,0,0" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <ComboBox Margin="0,0,30,0" Name="cb1" SelectionChanged="ComboBox_SelectionChanged">
+                                    <ComboBoxItem IsSelected="True">Sort By Date New to Old</ComboBoxItem>
+                                    <ComboBoxItem>Sort By Date Old to New</ComboBoxItem>
+                                    <ComboBoxItem>Sort By Name A-Z</ComboBoxItem>
+                                    <ComboBoxItem>Sort By Name Z-A</ComboBoxItem>
+                                    <ComboBoxItem>Sort By Size Tiny to Huge</ComboBoxItem>
+                                    <ComboBoxItem>Sort By Size Huge to Tine</ComboBoxItem>
+                                </ComboBox>
+                                <TextBox Opacity="1" Padding="43,0,0,0" Margin="0,0,28,0" TextChanged="tbSearch1_TextChanged" FontWeight="DemiBold"  Name="tbSearch1" Style="{StaticResource TB}"  Width="40" VerticalAlignment="Top" HorizontalAlignment="Left" Text="" MouseLeave="tbSearch1_MouseLeave" MouseEnter="tbSearch1_MouseEnter" LostFocus="tbSearch1_LostFocus"></TextBox>
+                                <Image Source="Images/searchpng.png" Margin="-95,0,0,0" Width="23" Name="imgSV1Search" IsHitTestVisible="False"></Image>
                             </StackPanel>
-                            
+
                             <WrapPanel Name="wp" Margin="0,8,0,5" VerticalAlignment="Top" HorizontalAlignment="Left"></WrapPanel>
                             <Image Name="load" Visibility="Collapsed" Width="300"
                             gif:AnimationBehavior.SourceUri="Images/loadanimation.gif" />
                         </StackPanel>
-                        
+
                     </ScrollViewer>
                 </TabItem>
                 <TabItem Style="{StaticResource MyTabitemStyle}" DockPanel.Dock="Top" Name="ti2">
@@ -413,9 +423,17 @@
                     </TabItem.Header>
                     <ScrollViewer Name="sv5" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" HorizontalAlignment="Right">
                         <StackPanel>
-                            <StackPanel Visibility="Collapsed" Name="svSearch2" Margin="15,10,0,0" Orientation="Horizontal">
-                                <TextBox Padding="43,0,0,0" TextChanged="tbSearch2_TextChanged" FontWeight="DemiBold"  Name="tbSearch2" Style="{StaticResource TB}"  Width="300" VerticalAlignment="Top" HorizontalAlignment="Left" Text=""></TextBox>
-                                <Image Source="Images/searchpng.png" IsHitTestVisible="False" Margin="-550,0,0,0" Width="23"></Image>
+                            <StackPanel Visibility="Collapsed" Name="svSearch2" Margin="15,15,0,0" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <ComboBox Margin="0,0,30,0" Name="cb2" SelectionChanged="ComboBox_SelectionChanged">
+                                    <ComboBoxItem IsSelected="True">Sort By Date New to Old</ComboBoxItem>
+                                    <ComboBoxItem>Sort By Date Old to New</ComboBoxItem>
+                                    <ComboBoxItem>Sort By Name A-Z</ComboBoxItem>
+                                    <ComboBoxItem>Sort By Name Z-A</ComboBoxItem>
+                                    <ComboBoxItem>Sort By Size Tiny to Huge</ComboBoxItem>
+                                    <ComboBoxItem>Sort By Size Huge to Tine</ComboBoxItem>
+                                </ComboBox>
+                                <TextBox Opacity="1" Padding="43,0,0,0" Margin="0,0,28,0" TextChanged="tbSearch2_TextChanged" FontWeight="DemiBold"  Name="tbSearch2" Style="{StaticResource TB}"  Width="40" VerticalAlignment="Top" HorizontalAlignment="Left" Text="" MouseLeave="tbSearch2_MouseLeave" MouseEnter="tbSearch2_MouseEnter" LostFocus="tbSearch2_LostFocus"></TextBox>
+                                <Image Source="Images/searchpng.png" Margin="-95,0,0,0" Width="23" Name="imgSV2Search" IsHitTestVisible="False"></Image>
                             </StackPanel>
                             <WrapPanel Name="wp5" Margin="0,5,0,5" VerticalAlignment="Top" HorizontalAlignment="Left"></WrapPanel>
                             <Image Name="load5" Visibility="Collapsed" Width="300"
@@ -433,9 +451,17 @@
                     </TabItem.Header>
                     <ScrollViewer Name="sv4" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" HorizontalAlignment="Right">
                         <StackPanel>
-                            <StackPanel Visibility="Collapsed" Name="svSearch3" Margin="15,10,0,0" Orientation="Horizontal">
-                                <TextBox Padding="43,0,0,0" TextChanged="tbSearch3_TextChanged" FontWeight="DemiBold"  Name="tbSearch3" Style="{StaticResource TB}"  Width="300" VerticalAlignment="Top" HorizontalAlignment="Left" Text=""></TextBox>
-                                <Image Source="Images/searchpng.png" IsHitTestVisible="False" Margin="-550,0,0,0" Width="23"></Image>
+                            <StackPanel Visibility="Collapsed" Name="svSearch3" Margin="15,15,0,0" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <ComboBox Margin="0,0,30,0" Name="cb3" SelectionChanged="ComboBox_SelectionChanged">
+                                    <ComboBoxItem IsSelected="True">Sort By Date New to Old</ComboBoxItem>
+                                    <ComboBoxItem>Sort By Date Old to New</ComboBoxItem>
+                                    <ComboBoxItem>Sort By Name A-Z</ComboBoxItem>
+                                    <ComboBoxItem>Sort By Name Z-A</ComboBoxItem>
+                                    <ComboBoxItem>Sort By Size Tiny to Huge</ComboBoxItem>
+                                    <ComboBoxItem>Sort By Size Huge to Tine</ComboBoxItem>
+                                </ComboBox>
+                                <TextBox Opacity="1" Padding="43,0,0,0" Margin="0,0,28,0" TextChanged="tbSearch3_TextChanged" FontWeight="DemiBold"  Name="tbSearch3" Style="{StaticResource TB}"  Width="40" VerticalAlignment="Top" HorizontalAlignment="Left" Text="" MouseLeave="tbSearch3_MouseLeave" MouseEnter="tbSearch3_MouseEnter" LostFocus="tbSearch3_LostFocus"></TextBox>
+                                <Image Source="Images/searchpng.png" Margin="-95,0,0,0" Width="23" Name="imgSV3Search" IsHitTestVisible="False"></Image>
                             </StackPanel>
                             <WrapPanel Name="wp4" Margin="0,5,0,5" VerticalAlignment="Top" HorizontalAlignment="Left"></WrapPanel>
                             <Image Name="load4" Visibility="Collapsed" Width="300"
@@ -444,7 +470,7 @@
 
                     </ScrollViewer>
                 </TabItem>
-                
+
                 <TabItem Style="{StaticResource MyTabitemStyle}" DockPanel.Dock="Top" Name="ti4">
                     <TabItem.Header>
                         <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
@@ -454,9 +480,17 @@
                     </TabItem.Header>
                     <ScrollViewer Name="sv3" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" HorizontalAlignment="Right">
                         <StackPanel>
-                            <StackPanel Visibility="Collapsed" Name="svSearch4" Margin="15,10,0,0" Orientation="Horizontal">
-                                <TextBox Padding="43,0,0,0" TextChanged="tbSearch4_TextChanged" FontWeight="DemiBold"  Name="tbSearch4" Style="{StaticResource TB}"  Width="300" VerticalAlignment="Top" HorizontalAlignment="Left" Text=""></TextBox>
-                                <Image Source="Images/searchpng.png" IsHitTestVisible="False" Margin="-550,0,0,0" Width="23"></Image>
+                            <StackPanel Visibility="Collapsed" Name="svSearch4" Margin="15,15,0,0" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <ComboBox Margin="0,0,30,0" Name="cb4" SelectionChanged="ComboBox_SelectionChanged">
+                                    <ComboBoxItem IsSelected="True">Sort By Date New to Old</ComboBoxItem>
+                                    <ComboBoxItem>Sort By Date Old to New</ComboBoxItem>
+                                    <ComboBoxItem>Sort By Name A-Z</ComboBoxItem>
+                                    <ComboBoxItem>Sort By Name Z-A</ComboBoxItem>
+                                    <ComboBoxItem>Sort By Size Tiny to Huge</ComboBoxItem>
+                                    <ComboBoxItem>Sort By Size Huge to Tine</ComboBoxItem>
+                                </ComboBox>
+                                <TextBox Opacity="1" Padding="43,0,0,0" Margin="0,0,28,0" TextChanged="tbSearch4_TextChanged" FontWeight="DemiBold"  Name="tbSearch4" Style="{StaticResource TB}"  Width="40" VerticalAlignment="Top" HorizontalAlignment="Left" Text="" MouseLeave="tbSearch4_MouseLeave" MouseEnter="tbSearch4_MouseEnter" LostFocus="tbSearch4_LostFocus"></TextBox>
+                                <Image Source="Images/searchpng.png" Margin="-95,0,0,0" Width="23" Name="imgSV4Search" IsHitTestVisible="False"></Image>
                             </StackPanel>
                             <WrapPanel Name="wp3" Margin="0,5,0,5" VerticalAlignment="Top" HorizontalAlignment="Left"></WrapPanel>
                             <Image Name="load3" Visibility="Collapsed" Width="300"
@@ -556,7 +590,7 @@
                         </Canvas>
                     </TabItem.Header>
                 </TabItem>
-                
+
                 <TabItem DockPanel.Dock="Bottom" Name="ti5" Margin="0,0,0,15">
                     <TabItem.Style>
                         <Style TargetType="TabItem">
@@ -609,7 +643,7 @@
                                         </Setter.Value>
                                     </Setter>
                                 </Trigger>
-                                
+
                             </Style.Triggers>
 
                         </Style>
@@ -619,7 +653,7 @@
                             <Image Source="Images/exit.png" Width="49" Height="30"></Image>
                             <TextBlock Height="40" Text="Exit" Opacity="0" FontSize="21" Margin="15,0,0,0" Name="ti5_txt" Padding="0,4,0,0"></TextBlock>
                         </StackPanel>
-                        
+
                     </TabItem.Header>
                 </TabItem>
 
@@ -671,9 +705,9 @@
                     </TabItem.Header>
 
                     <ScrollViewer Name="sv2" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto"  HorizontalAlignment="Right" >
-                        
+
                         <StackPanel Name="spHistory" Margin="0,5,5,5" Orientation="Vertical">
-                            
+
                         </StackPanel>
 
                     </ScrollViewer>
@@ -682,6 +716,6 @@
 
             </TabControl>
         </DockPanel>
-        
+
     </Grid>
 </Window>

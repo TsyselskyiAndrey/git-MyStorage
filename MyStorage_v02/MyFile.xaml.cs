@@ -54,7 +54,7 @@ namespace MyStorage_v02
                 star.Source = new BitmapImage(new Uri("Images/star5.png", UriKind.Relative));
                 adfav.Header = " Add to favorites";
             }
-            if(IsRemoved == true)
+            if (IsRemoved == true)
             {
                 restore.Visibility = Visibility.Visible;
                 download.Visibility = Visibility.Collapsed;
@@ -64,7 +64,7 @@ namespace MyStorage_v02
                 ren.Visibility = Visibility.Collapsed;
                 adfav.Visibility = Visibility.Collapsed;
                 res.Visibility = Visibility.Visible;
-                
+
             }
             else
             {
@@ -79,7 +79,7 @@ namespace MyStorage_v02
             }
         }
 
-        private void B_MouseEnter(object sender, MouseEventArgs e)
+        private void Border_MouseEnter(object sender, MouseEventArgs e)
         {
             border.BeginAnimation(Canvas.LeftProperty, new DoubleAnimation()
             {
@@ -93,7 +93,7 @@ namespace MyStorage_v02
             });
         }
 
-        private void B_MouseLeave(object sender, MouseEventArgs e)
+        private void Border_MouseLeave(object sender, MouseEventArgs e)
         {
             border.BeginAnimation(Canvas.LeftProperty, new DoubleAnimation()
             {
@@ -109,7 +109,7 @@ namespace MyStorage_v02
 
         private void star_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if(IsFavorite == true)
+            if (IsFavorite == true)
             {
                 star.Source = new BitmapImage(new Uri("Images/star3.png", UriKind.Relative));
                 IsFavorite = false;

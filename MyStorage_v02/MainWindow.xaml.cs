@@ -17,6 +17,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
+using MaterialDesignColors;
+using MaterialDesignThemes.Wpf;
 
 namespace MyStorage_v02
 {
@@ -40,7 +42,6 @@ namespace MyStorage_v02
             this.Left = left;
             this.Top = top;
         }
-
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             if (File.Exists(PATH))
@@ -51,13 +52,13 @@ namespace MyStorage_v02
                     {
                         using (StreamReader sr = new StreamReader(fs))
                         {
-                            EMAIL = sr.ReadLine();    
+                            EMAIL = sr.ReadLine();
                         }
                     }
-                    Task task = Task.Run(Load2);
+                    Task task = Task.Run(LoadWithConfig);
                     task.ContinueWith(LoadEnd);
                 }
-                catch (Exception) 
+                catch (Exception)
                 {
                     MessageBox.Show("Error!");
                 }
@@ -85,7 +86,7 @@ namespace MyStorage_v02
 
         private void ToolBar_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if(e.ChangedButton == MouseButton.Left)
+            if (e.ChangedButton == MouseButton.Left)
             {
                 this.DragMove();
             }
@@ -107,16 +108,16 @@ namespace MyStorage_v02
             }
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void SignUpButton_Click(object sender, RoutedEventArgs e)
         {
             Window w = new SignUpForm(this.Left, this.Top);
             w.Show();
             this.Close();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void LogInButton_Click(object sender, RoutedEventArgs e)
         {
-            
+
             if (tbEmail.Text.Length != 0 && tbPass.Password.Length != 0)
             {
                 if (IsEmailValid(tbEmail.Text.ToLower()))
@@ -148,7 +149,7 @@ namespace MyStorage_v02
             Dispatcher.Invoke(() => {
                 this.load_img.Visibility = Visibility.Visible;
             });
-            
+
             Thread.Sleep(1000);
             try
             {
@@ -160,7 +161,7 @@ namespace MyStorage_v02
                     {
                         if (user.Password == Dispatcher.Invoke(new Func<string>(() => tbPass.Password)))
                         {
-                            if(Dispatcher.Invoke(new Func<bool?>(() => TGB.IsChecked)) == true)
+                            if (Dispatcher.Invoke(new Func<bool?>(() => TGB.IsChecked)) == true)
                             {
                                 try
                                 {
@@ -172,17 +173,17 @@ namespace MyStorage_v02
                                         }
                                     }
                                 }
-                                catch (Exception) 
+                                catch (Exception)
                                 {
                                     MessageBox.Show("Some error!");
                                 }
                             }
 
-                            Dispatcher.Invoke(()=> { 
-                                Window w = new ChooseForm(user);
+                            Dispatcher.Invoke(() => {
+                                Window w = new Storage(user);
                                 w.Show();
                             });
-                           
+
                             Dispatcher.Invoke(new Action(() => this.Close()));
                         }
                         else
@@ -201,7 +202,7 @@ namespace MyStorage_v02
                 MessageBox.Show(ex.Message);
             }
         }
-        public void Load2()
+        public void LoadWithConfig()
         {
             Dispatcher.Invoke(() => {
                 this.load_img.Visibility = Visibility.Visible;
@@ -216,7 +217,7 @@ namespace MyStorage_v02
                     if (user != null)
                     {
                         Dispatcher.Invoke(() => {
-                            Window w = new ChooseForm(user);
+                            Window w = new Storage(user);
                             w.Show();
                         });
 
@@ -230,7 +231,7 @@ namespace MyStorage_v02
                             {
                                 File.Delete("config.txt");
                             }
-                            
+
                         }
                         catch (Exception e)
                         {
@@ -257,6 +258,6 @@ namespace MyStorage_v02
             return Regex.IsMatch(email, @"^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$");
         }
 
-        
+
     }
 }

@@ -278,11 +278,11 @@
             <Image Source="Images/pass_pic.png" IsHitTestVisible="False" Grid.Row="2" Margin="275,228,0,0" VerticalAlignment="Top" Width="30"></Image>
 
             <StackPanel Grid.Row="2" Height="30" Margin="25,290,25,10" Orientation="Horizontal">
-                <Button  FontWeight="DemiBold" Style="{StaticResource MyButtonStyle}" Margin="0" Height="30" Width="30" FontSize="20" Click="Button_Click">🠔</Button>
-                <Button  FontWeight="DemiBold" Style="{StaticResource MyButtonStyle}" Margin="5,0,0,0" Height="30" Width="280" Click="Button_Click_1">Sign Up</Button>
+                <Button  FontWeight="DemiBold" Style="{StaticResource MyButtonStyle}" Margin="0" Height="30" Width="30" FontSize="20" Click="ReturnButton_Click">🠔</Button>
+                <Button  FontWeight="DemiBold" Style="{StaticResource MyButtonStyle}" Margin="5,0,0,0" Height="30" Width="280" Click="SignUpButton_Click">Sign Up</Button>
             </StackPanel>
 
         </Grid>
     </Canvas>
-    
+
 </Window>

@@ -1,5 +1,6 @@
 ﻿using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Models;
+using MaterialDesignThemes.Wpf;
 using Microsoft.Win32;
 using Microsoft.WindowsAPICodePack.Dialogs;
 using MyStorage_v02.Models;
@@ -34,7 +35,6 @@ namespace MyStorage_v02
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private static bool key = false;
         private static bool flag = true;
 
         public Task MyTask { get; set; }
@@ -92,6 +92,7 @@ namespace MyStorage_v02
         };
         private static DoubleAnimation da3 = new DoubleAnimation
         {
+
             To = 1,
             Duration = TimeSpan.FromSeconds(0.25)
         };
@@ -101,7 +102,7 @@ namespace MyStorage_v02
             Duration = TimeSpan.FromSeconds(0.25)
         };
 
-        
+
 
         public Storage(Users user)
         {
@@ -130,7 +131,7 @@ namespace MyStorage_v02
                 window.BorderThickness = new Thickness(0);
                 chrome.ResizeBorderThickness = new Thickness(0);
                 flag = false;
-                
+
             }
             else
             {
@@ -182,8 +183,6 @@ namespace MyStorage_v02
 
         private void cross_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            Window w = new ChooseForm(User);
-            w.Show();
             this.Close();
         }
 
@@ -193,7 +192,7 @@ namespace MyStorage_v02
             this.WindowState = WindowState.Maximized;
             this.ResizeMode = ResizeMode.CanResize;
 
-           
+
         }
 
         private void LoadingRecentEnd(Task obj)
@@ -419,112 +418,54 @@ namespace MyStorage_v02
                 thread.Abort();
             }
         }
+        private void AnimationImplementation(DoubleAnimation daWidth, DoubleAnimation daOpacity)
+        {
+            ti1_txt.BeginAnimation(OpacityProperty, daOpacity);
+            ti2_txt.BeginAnimation(OpacityProperty, daOpacity);
+            ti3_txt.BeginAnimation(OpacityProperty, daOpacity);
+            ti4_txt.BeginAnimation(OpacityProperty, daOpacity);
+            ti5_txt.BeginAnimation(OpacityProperty, daOpacity);
+            ti7_txt.BeginAnimation(OpacityProperty, daOpacity);
+            addBtn.BeginAnimation(OpacityProperty, daOpacity);
+            progress.BeginAnimation(OpacityProperty, daOpacity);
+            tbSize.BeginAnimation(OpacityProperty, daOpacity);
 
+            ti1.BeginAnimation(WidthProperty, daWidth);
+            ti2.BeginAnimation(WidthProperty, daWidth);
+            ti3.BeginAnimation(WidthProperty, daWidth);
+            ti4.BeginAnimation(WidthProperty, daWidth);
+            ti5.BeginAnimation(WidthProperty, daWidth);
+            ti6.BeginAnimation(WidthProperty, daWidth);
+            ti7.BeginAnimation(WidthProperty, daWidth);
+            canvas.BeginAnimation(WidthProperty, daWidth);
+        }
         private void TabMouseEnter(object sender, MouseEventArgs e)
         {
-            ti1_txt.BeginAnimation(OpacityProperty, da3);
-            ti2_txt.BeginAnimation(OpacityProperty, da3);
-            ti3_txt.BeginAnimation(OpacityProperty, da3);
-            ti4_txt.BeginAnimation(OpacityProperty, da3);
-            ti5_txt.BeginAnimation(OpacityProperty, da3);
-            ti7_txt.BeginAnimation(OpacityProperty, da3);
-            addBtn.BeginAnimation(OpacityProperty, da3);
-            progress.BeginAnimation(OpacityProperty, da3);
-            tbSize.BeginAnimation(OpacityProperty, da3);
-
-            ti1.BeginAnimation(WidthProperty, da);
-            ti2.BeginAnimation(WidthProperty, da);
-            ti3.BeginAnimation(WidthProperty, da);
-            ti4.BeginAnimation(WidthProperty, da);
-            ti5.BeginAnimation(WidthProperty, da);
-            ti6.BeginAnimation(WidthProperty, da);
-            ti7.BeginAnimation(WidthProperty, da);
-            canvas.BeginAnimation(WidthProperty, da);
+            AnimationImplementation(da, da3);
         }
 
         private void TabMouseLeave(object sender, MouseEventArgs e)
         {
-            ti1_txt.BeginAnimation(OpacityProperty, da4);
-            ti2_txt.BeginAnimation(OpacityProperty, da4);
-            ti3_txt.BeginAnimation(OpacityProperty, da4);
-            ti4_txt.BeginAnimation(OpacityProperty, da4);
-            ti5_txt.BeginAnimation(OpacityProperty, da4);
-            ti7_txt.BeginAnimation(OpacityProperty, da4);
-            addBtn.BeginAnimation(OpacityProperty, da4);
-            progress.BeginAnimation(OpacityProperty, da4);
-            tbSize.BeginAnimation(OpacityProperty, da4);
-
-            ti1.BeginAnimation(WidthProperty, da2);
-            ti2.BeginAnimation(WidthProperty, da2);
-            ti3.BeginAnimation(WidthProperty, da2);
-            ti4.BeginAnimation(WidthProperty, da2);
-            ti5.BeginAnimation(WidthProperty, da2);
-            ti6.BeginAnimation(WidthProperty, da2);
-            ti7.BeginAnimation(WidthProperty, da2);
-            canvas.BeginAnimation(WidthProperty, da2);
+            AnimationImplementation(da2, da4);
         }
 
         private void CPMouseEnter(object sender, MouseEventArgs e)
         {
             da.To = 50;
             da3.To = 0;
-            ti1_txt.BeginAnimation(OpacityProperty, da3);
-            ti2_txt.BeginAnimation(OpacityProperty, da3);
-            ti3_txt.BeginAnimation(OpacityProperty, da3);
-            ti4_txt.BeginAnimation(OpacityProperty, da3);
-            ti5_txt.BeginAnimation(OpacityProperty, da3);
-            ti7_txt.BeginAnimation(OpacityProperty, da3);
-            addBtn.BeginAnimation(OpacityProperty, da3);
-            progress.BeginAnimation(OpacityProperty, da3);
-            tbSize.BeginAnimation(OpacityProperty, da3);
-
-            ti1.BeginAnimation(WidthProperty, da);
-            ti2.BeginAnimation(WidthProperty, da);
-            ti3.BeginAnimation(WidthProperty, da);
-            ti4.BeginAnimation(WidthProperty, da);
-            ti5.BeginAnimation(WidthProperty, da);
-            ti6.BeginAnimation(WidthProperty, da);
-            ti7.BeginAnimation(WidthProperty, da);
-            canvas.BeginAnimation(WidthProperty, da);
+            AnimationImplementation(da, da3);
         }
 
         private void CPMouseLeave(object sender, MouseEventArgs e)
         {
             da.To = 200;
             da3.To = 1;
-            ti1_txt.BeginAnimation(OpacityProperty, da3);
-            ti2_txt.BeginAnimation(OpacityProperty, da3);
-            ti3_txt.BeginAnimation(OpacityProperty, da3);
-            ti4_txt.BeginAnimation(OpacityProperty, da3);
-            ti5_txt.BeginAnimation(OpacityProperty, da3);
-            ti7_txt.BeginAnimation(OpacityProperty, da3);
-            addBtn.BeginAnimation(OpacityProperty, da3);
-            progress.BeginAnimation(OpacityProperty, da3);
-            tbSize.BeginAnimation(OpacityProperty, da3);
-
-            ti1.BeginAnimation(WidthProperty, da);
-            ti2.BeginAnimation(WidthProperty, da);
-            ti3.BeginAnimation(WidthProperty, da);
-            ti4.BeginAnimation(WidthProperty, da);
-            ti5.BeginAnimation(WidthProperty, da);
-            ti6.BeginAnimation(WidthProperty, da);
-            ti7.BeginAnimation(WidthProperty, da);
-            canvas.BeginAnimation(WidthProperty, da);
+            AnimationImplementation(da2, da4);
         }
 
         private void TabItem_GotFocus(object sender, RoutedEventArgs e)
         {
-            if(key == false)
-            {
-                Window w = new ChooseForm(User);
-                w.Show();
-                this.Close();
-                key = true;
-            }
-            else
-            {
-                key = false;
-            }
+            this.Close();
         }
 
         private void OnDragOver(object sender, DragEventArgs e)
@@ -535,7 +476,7 @@ namespace MyStorage_v02
                 e.Effects = DragDropEffects.Copy;
                 e.Handled = true;
             }
-            
+
         }
 
         private void wp_Drop(object sender, DragEventArgs e)
@@ -591,7 +532,7 @@ namespace MyStorage_v02
 
         private void addBtn_Click(object sender, RoutedEventArgs e)
         {
-            if(myProgressBarUpload == null)
+            if (myProgressBarUpload == null)
             {
                 Task task = new Task(Uploading, Token);
                 task.ContinueWith(UploadingEnd);
@@ -601,12 +542,12 @@ namespace MyStorage_v02
             {
                 MessageBox.Show("Wait the for previous files!");
             }
-            
+
         }
 
         private void UploadingEnd(Task obj)
         {
-            if(myProgressBarDownload == null)
+            if (myProgressBarDownload == null)
             {
                 ImageAnimationController controller;
                 Dispatcher.Invoke(() => { controller = ImageBehavior.GetAnimationController(this.DownloadGif); this.DownloadGif.Visibility = Visibility.Collapsed; this.DownloadImg.Visibility = Visibility.Visible; controller.Pause(); });
@@ -620,7 +561,7 @@ namespace MyStorage_v02
             openFileDialog.Multiselect = true;
             ImageAnimationController controller;
             Dispatcher.Invoke(() => { controller = ImageBehavior.GetAnimationController(this.DownloadGif); this.DownloadGif.Visibility = Visibility.Visible; this.DownloadImg.Visibility = Visibility.Collapsed; controller.Play(); });
-            
+
             if (openFileDialog.ShowDialog() == true)
             {
                 foreach (var item in openFileDialog.FileNames)
@@ -712,9 +653,9 @@ namespace MyStorage_v02
                     {
                         MessageBox.Show("The file is too small!");
                     }
-                    
+
                 }
-                
+
             }
         }
         public void Deleting(MyFile myFile)
@@ -724,7 +665,7 @@ namespace MyStorage_v02
             {
                 if (blobClient.Exists())
                 {
-                    
+
                     blobClient.Delete(snapshotsOption: DeleteSnapshotsOption.IncludeSnapshots);
 
                     int id = -1;
@@ -758,9 +699,9 @@ namespace MyStorage_v02
                             load4.ContinueWith(LoadingRecentEnd);
                             load4.Start();
                         }
-                        
+
                     });
-                    
+
                 }
                 else
                 {
@@ -785,9 +726,6 @@ namespace MyStorage_v02
             {
                 MessageBox.Show(ex.Message);
             }
-            
-
-            
         }
 
         private void LoadMemory()
@@ -813,9 +751,9 @@ namespace MyStorage_v02
                 CommonOpenFileDialog dialog = new CommonOpenFileDialog();
                 dialog.InitialDirectory = @"C:\";
                 dialog.IsFolderPicker = true;
-                if (Dispatcher.Invoke(new Func<bool>(()=> dialog.ShowDialog() == CommonFileDialogResult.Ok)))
+                if (Dispatcher.Invoke(new Func<bool>(() => dialog.ShowDialog() == CommonFileDialogResult.Ok)))
                 {
-                    var outputFile = File.OpenWrite(@""+dialog.FileName + @"\" + myFile.Title);
+                    var outputFile = File.OpenWrite(@"" + dialog.FileName + @"\" + myFile.Title);
                     var downloadBuffer = new byte[81920];
                     int bytesRead;
                     int totalBytesDownloaded = 0;
@@ -823,7 +761,7 @@ namespace MyStorage_v02
                         myProgressBarDownload = new ProcessControl(myFile.Title, 0, myFile.Size, 0, DateTime.Now, "Download");
                         spHistory.Children.Add(myProgressBarDownload);
                     });
-                    while ((bytesRead = blobClient.Content.Read(downloadBuffer, 0, downloadBuffer.Length)) != 0) 
+                    while ((bytesRead = blobClient.Content.Read(downloadBuffer, 0, downloadBuffer.Length)) != 0)
                     {
                         outputFile.Write(downloadBuffer, 0, bytesRead);
                         totalBytesDownloaded += bytesRead;
@@ -841,12 +779,12 @@ namespace MyStorage_v02
             {
                 MessageBox.Show(ex.Message);
             }
-            
+
         }
 
         public void DownloadingEnd(Task obj)
         {
-            if(myProgressBarUpload == null)
+            if (myProgressBarUpload == null)
             {
                 ImageAnimationController controller;
                 Dispatcher.Invoke(() => { controller = ImageBehavior.GetAnimationController(this.DownloadGif); this.DownloadGif.Visibility = Visibility.Collapsed; this.DownloadImg.Visibility = Visibility.Visible; controller.Pause(); });
@@ -861,7 +799,7 @@ namespace MyStorage_v02
             {
                 if (myFile.RemoveDate.AddDays(7) > DateTime.Now)
                 {
-                    if(Memory + myFile.Size <= MaxMemory)
+                    if (Memory + myFile.Size <= MaxMemory)
                     {
                         blobClient.Undelete();
                         int id = -1;
@@ -893,7 +831,7 @@ namespace MyStorage_v02
             Task load2 = new Task(LoadingTrash);
             load2.ContinueWith(LoadingTrashEnd);
             load2.Start();
-            
+
         }
 
         public void RestoringEnd(Task obj)
@@ -904,7 +842,7 @@ namespace MyStorage_v02
 
         public void Favorite(MyFile myFile, string mode)
         {
-            if(mode == "plus")
+            if (mode == "plus")
             {
                 try
                 {
@@ -923,7 +861,7 @@ namespace MyStorage_v02
                 {
                     MessageBox.Show(ex.Message);
                 }
-                
+
             }
             else
             {
@@ -948,7 +886,7 @@ namespace MyStorage_v02
                 load3.ContinueWith(LoadingFavoriteEnd);
                 load3.Start();
             }
-            
+
         }
 
 
@@ -1006,7 +944,7 @@ namespace MyStorage_v02
                 }
                 NewFileName = "";
             }
-            
+
         }
 
 
@@ -1041,7 +979,7 @@ namespace MyStorage_v02
                 load.ContinueWith(LoadingEnd);
                 load.Start();
             }
-            else if(tab.SelectedIndex == 3)
+            else if (tab.SelectedIndex == 3)
             {
                 Task load2 = new Task(LoadingTrash);
                 load2.ContinueWith(LoadingTrashEnd);
@@ -1068,7 +1006,7 @@ namespace MyStorage_v02
                 wp.Children.Clear();
             });
             string text = Dispatcher.Invoke(new Func<string>(() => tbSearch1.Text));
-            if(String.IsNullOrEmpty(text) || String.IsNullOrWhiteSpace(text))
+            if (String.IsNullOrEmpty(text) || String.IsNullOrWhiteSpace(text))
             {
                 foreach (var item in MyFiles)
                 {
@@ -1082,7 +1020,7 @@ namespace MyStorage_v02
                     Dispatcher.Invoke(() => wp.Children.Add(item));
                 }
             }
-            
+
         }
         private void LoadSearch2()
         {
@@ -1207,6 +1145,402 @@ namespace MyStorage_v02
 
             MyTask4 = new Task(LoadSearch4);
             MyTask4.Start();
+        }
+
+
+
+        private void WidthAnimation(TextBox tbSearch, bool flag)
+        {
+            Dispatcher.Invoke(new Action(() => {
+                DoubleAnimation da = new DoubleAnimation();
+                if (flag)
+                {
+                    da.To = 300;
+                }
+                else
+                {
+                    da.To = 40;
+                }
+                da.Duration = TimeSpan.FromSeconds(0.25);
+                tbSearch.BeginAnimation(WidthProperty, da);
+            }));
+        }
+        private void MarginAnimation(Image imgSVSearch, bool flag)
+        {
+            Dispatcher.Invoke(new Action(() => {
+                ThicknessAnimation marginAnimation = new ThicknessAnimation();
+                if (flag)
+                {
+                    marginAnimation.To = new Thickness(-610, 0, 0, 0);
+                }
+                else
+                {
+                    marginAnimation.To = new Thickness(-95, 0, 0, 0);
+                }
+                marginAnimation.Duration = TimeSpan.FromSeconds(0.25);
+                imgSVSearch.BeginAnimation(MarginProperty, marginAnimation);
+            }));
+        }
+
+        private void tbSearch1_MouseEnter(object sender, MouseEventArgs e)
+        {
+            Task.Run(() => WidthAnimation(tbSearch1, true));
+            Task.Run(() => MarginAnimation(imgSV1Search, true));
+        }
+
+
+
+        private void tbSearch1_MouseLeave(object sender, MouseEventArgs e)
+        {
+            if (tbSearch1.IsFocused == false && tbSearch1.Text == "")
+            {
+                Task.Run(() => WidthAnimation(tbSearch1, false));
+                Task.Run(() => MarginAnimation(imgSV1Search, false));
+            }
+
+        }
+
+        private void tbSearch1_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (tbSearch1.Text == "")
+            {
+                Task.Run(() => WidthAnimation(tbSearch1, false));
+                Task.Run(() => MarginAnimation(imgSV1Search, false));
+            }
+        }
+
+        private void tbSearch2_MouseEnter(object sender, MouseEventArgs e)
+        {
+            Task.Run(() => WidthAnimation(tbSearch2, true));
+            Task.Run(() => MarginAnimation(imgSV2Search, true));
+        }
+
+        private void tbSearch2_MouseLeave(object sender, MouseEventArgs e)
+        {
+            if (tbSearch2.IsFocused == false && tbSearch2.Text == "")
+            {
+                Task.Run(() => WidthAnimation(tbSearch2, false));
+                Task.Run(() => MarginAnimation(imgSV2Search, false));
+            }
+        }
+
+        private void tbSearch2_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (tbSearch2.Text == "")
+            {
+                Task.Run(() => WidthAnimation(tbSearch2, false));
+                Task.Run(() => MarginAnimation(imgSV2Search, false));
+            }
+        }
+
+        private void tbSearch3_MouseEnter(object sender, MouseEventArgs e)
+        {
+            Task.Run(() => WidthAnimation(tbSearch3, true));
+            Task.Run(() => MarginAnimation(imgSV3Search, true));
+        }
+
+        private void tbSearch3_MouseLeave(object sender, MouseEventArgs e)
+        {
+            if (tbSearch3.IsFocused == false && tbSearch3.Text == "")
+            {
+                Task.Run(() => WidthAnimation(tbSearch3, false));
+                Task.Run(() => MarginAnimation(imgSV3Search, false));
+            }
+        }
+
+        private void tbSearch3_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (tbSearch3.Text == "")
+            {
+                Task.Run(() => WidthAnimation(tbSearch3, false));
+                Task.Run(() => MarginAnimation(imgSV3Search, false));
+            }
+        }
+
+        private void tbSearch4_MouseEnter(object sender, MouseEventArgs e)
+        {
+            Task.Run(() => WidthAnimation(tbSearch4, true));
+            Task.Run(() => MarginAnimation(imgSV4Search, true));
+        }
+
+        private void tbSearch4_MouseLeave(object sender, MouseEventArgs e)
+        {
+            if (tbSearch4.IsFocused == false && tbSearch4.Text == "")
+            {
+                Task.Run(() => WidthAnimation(tbSearch4, false));
+                Task.Run(() => MarginAnimation(imgSV4Search, false));
+            }
+        }
+
+        private void tbSearch4_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (tbSearch4.Text == "")
+            {
+                Task.Run(() => WidthAnimation(tbSearch4, false));
+                Task.Run(() => MarginAnimation(imgSV4Search, false));
+            }
+        }
+        private void LoadSort()
+        {
+            Dispatcher.Invoke(() => {
+                wp.Children.Clear();
+            });
+            int idx = Dispatcher.Invoke(new Func<int>(() => cb1.SelectedIndex));
+            if (idx == 0)
+            {
+                foreach (var item in MyFiles.OrderBy(x => x.AddDate).ToList<MyFile>())
+                {
+                    Dispatcher.Invoke(() => wp.Children.Add(item));
+                }
+            }
+            else if (idx == 1)
+            {
+                foreach (var item in MyFiles.OrderByDescending(x => x.AddDate).ToList<MyFile>())
+                {
+                    Dispatcher.Invoke(() => wp.Children.Add(item));
+                }
+            }
+            else if (idx == 2)
+            {
+                foreach (var item in MyFiles.OrderBy(x => x.Title).ToList<MyFile>())
+                {
+                    Dispatcher.Invoke(() => wp.Children.Add(item));
+                }
+            }
+            else if (idx == 3)
+            {
+                foreach (var item in MyFiles.OrderByDescending(x => x.Title).ToList<MyFile>())
+                {
+                    Dispatcher.Invoke(() => wp.Children.Add(item));
+                }
+            }
+            else if (idx == 4)
+            {
+                foreach (var item in MyFiles.OrderBy(x => x.Size).ToList<MyFile>())
+                {
+                    Dispatcher.Invoke(() => wp.Children.Add(item));
+                }
+            }
+            else if (idx == 5)
+            {
+                foreach (var item in MyFiles.OrderByDescending(x => x.Size).ToList<MyFile>())
+                {
+                    Dispatcher.Invoke(() => wp.Children.Add(item));
+                }
+            }
+        }
+
+        private void LoadSort2()
+        {
+            Dispatcher.Invoke(() => {
+                wp5.Children.Clear();
+            });
+            int idx = Dispatcher.Invoke(new Func<int>(() => cb2.SelectedIndex));
+            if (idx == 0)
+            {
+                foreach (var item in MyFiles2.OrderBy(x => x.AddDate).ToList<MyFile>())
+                {
+                    Dispatcher.Invoke(() => wp5.Children.Add(item));
+                }
+            }
+            else if (idx == 1)
+            {
+                foreach (var item in MyFiles2.OrderByDescending(x => x.AddDate).ToList<MyFile>())
+                {
+                    Dispatcher.Invoke(() => wp5.Children.Add(item));
+                }
+            }
+            else if (idx == 2)
+            {
+                foreach (var item in MyFiles2.OrderBy(x => x.Title).ToList<MyFile>())
+                {
+                    Dispatcher.Invoke(() => wp5.Children.Add(item));
+                }
+            }
+            else if (idx == 3)
+            {
+                foreach (var item in MyFiles2.OrderByDescending(x => x.Title).ToList<MyFile>())
+                {
+                    Dispatcher.Invoke(() => wp5.Children.Add(item));
+                }
+            }
+            else if (idx == 4)
+            {
+                foreach (var item in MyFiles2.OrderBy(x => x.Size).ToList<MyFile>())
+                {
+                    Dispatcher.Invoke(() => wp5.Children.Add(item));
+                }
+            }
+            else if (idx == 5)
+            {
+                foreach (var item in MyFiles2.OrderByDescending(x => x.Size).ToList<MyFile>())
+                {
+                    Dispatcher.Invoke(() => wp5.Children.Add(item));
+                }
+            }
+
+
+        }
+
+        private void LoadSort3()
+        {
+            Dispatcher.Invoke(() => {
+                wp4.Children.Clear();
+            });
+            int idx = Dispatcher.Invoke(new Func<int>(() => cb3.SelectedIndex));
+            if (idx == 0)
+            {
+                foreach (var item in MyFiles3.OrderBy(x => x.AddDate).ToList<MyFile>())
+                {
+                    Dispatcher.Invoke(() => wp4.Children.Add(item));
+                }
+            }
+            else if (idx == 1)
+            {
+                foreach (var item in MyFiles3.OrderByDescending(x => x.AddDate).ToList<MyFile>())
+                {
+                    Dispatcher.Invoke(() => wp4.Children.Add(item));
+                }
+            }
+            else if (idx == 2)
+            {
+                foreach (var item in MyFiles3.OrderBy(x => x.Title).ToList<MyFile>())
+                {
+                    Dispatcher.Invoke(() => wp4.Children.Add(item));
+                }
+            }
+            else if (idx == 3)
+            {
+                foreach (var item in MyFiles3.OrderByDescending(x => x.Title).ToList<MyFile>())
+                {
+                    Dispatcher.Invoke(() => wp4.Children.Add(item));
+                }
+            }
+            else if (idx == 4)
+            {
+                foreach (var item in MyFiles3.OrderBy(x => x.Size).ToList<MyFile>())
+                {
+                    Dispatcher.Invoke(() => wp4.Children.Add(item));
+                }
+            }
+            else if (idx == 5)
+            {
+                foreach (var item in MyFiles3.OrderByDescending(x => x.Size).ToList<MyFile>())
+                {
+                    Dispatcher.Invoke(() => wp4.Children.Add(item));
+                }
+            }
+
+
+        }
+
+        private void LoadSort4()
+        {
+            Dispatcher.Invoke(() => {
+                wp3.Children.Clear();
+            });
+            int idx = Dispatcher.Invoke(new Func<int>(() => cb4.SelectedIndex));
+            if (idx == 0)
+            {
+                foreach (var item in MyFiles4.OrderBy(x => x.AddDate).ToList<MyFile>())
+                {
+                    Dispatcher.Invoke(() => wp3.Children.Add(item));
+                }
+            }
+            else if (idx == 1)
+            {
+                foreach (var item in MyFiles4.OrderByDescending(x => x.AddDate).ToList<MyFile>())
+                {
+                    Dispatcher.Invoke(() => wp3.Children.Add(item));
+                }
+            }
+            else if (idx == 2)
+            {
+                foreach (var item in MyFiles4.OrderBy(x => x.Title).ToList<MyFile>())
+                {
+                    Dispatcher.Invoke(() => wp3.Children.Add(item));
+                }
+            }
+            else if (idx == 3)
+            {
+                foreach (var item in MyFiles4.OrderByDescending(x => x.Title).ToList<MyFile>())
+                {
+                    Dispatcher.Invoke(() => wp3.Children.Add(item));
+                }
+            }
+            else if (idx == 4)
+            {
+                foreach (var item in MyFiles4.OrderBy(x => x.Size).ToList<MyFile>())
+                {
+                    Dispatcher.Invoke(() => wp3.Children.Add(item));
+                }
+            }
+            else if (idx == 5)
+            {
+                foreach (var item in MyFiles4.OrderByDescending(x => x.Size).ToList<MyFile>())
+                {
+                    Dispatcher.Invoke(() => wp3.Children.Add(item));
+                }
+            }
+
+
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (ti1 != null && ti1.IsSelected == true)
+            {
+                if (MyTask != null)
+                {
+                    if (MyTask.Status == TaskStatus.Running)
+                    {
+                        MyTask.Dispose();
+                    }
+                }
+
+                MyTask = new Task(LoadSort);
+                MyTask.Start();
+            }
+            else if (ti2 != null && ti2.IsSelected == true)
+            {
+                if (MyTask2 != null)
+                {
+                    if (MyTask2.Status == TaskStatus.Running)
+                    {
+                        MyTask2.Dispose();
+                    }
+                }
+
+                MyTask2 = new Task(LoadSort2);
+                MyTask2.Start();
+            }
+            else if (ti3 != null && ti3.IsSelected == true)
+            {
+                if (MyTask3 != null)
+                {
+                    if (MyTask3.Status == TaskStatus.Running)
+                    {
+                        MyTask3.Dispose();
+                    }
+                }
+
+                MyTask3 = new Task(LoadSort3);
+                MyTask3.Start();
+            }
+            else if (ti4 != null && ti4.IsSelected == true)
+            {
+                if (MyTask4 != null)
+                {
+                    if (MyTask4.Status == TaskStatus.Running)
+                    {
+                        MyTask4.Dispose();
+                    }
+                }
+
+                MyTask4 = new Task(LoadSort4);
+                MyTask4.Start();
+            }
+            e.Handled = true;
         }
     }
 }

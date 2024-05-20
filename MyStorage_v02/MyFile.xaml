@@ -74,14 +74,14 @@
             </Setter>
         </Style>
     </UserControl.Resources>
-    
-    
+
+
     <Canvas Name="myCanvas" Background="Transparent">
         <Canvas.Resources>
             <local:SizeConverter x:Key="SizeConverter"></local:SizeConverter>
             <local:ExtensionConverter x:Key="ExtensionConverter"></local:ExtensionConverter>
         </Canvas.Resources>
-        <Border Canvas.Left="8" Canvas.Top="8" BorderThickness="3" BorderBrush="#FF7A49FF" Name="border" Background="AliceBlue" Width="200" Height="300" MouseEnter="B_MouseEnter" MouseLeave="B_MouseLeave">
+        <Border Canvas.Left="8" Canvas.Top="8" BorderThickness="3" BorderBrush="#FF7A49FF" Name="border" Background="AliceBlue" Width="200" Height="300" MouseEnter="Border_MouseEnter" MouseLeave="Border_MouseLeave">
             <Border.ContextMenu>
                 <ContextMenu Name="MyMenu">
                     <MenuItem Name="dl" Visibility="Visible" Header=" Download" Margin="3,3,3,0" Click="dl_Click"/>
@@ -92,7 +92,7 @@
                     <MenuItem Name="ren" Visibility="Visible" Header="Rename" Margin="3,0,3,3" Click="ren_Click"/>
                 </ContextMenu>
             </Border.ContextMenu>
-            
+
             <Border.Triggers>
                 <EventTrigger RoutedEvent="Border.MouseEnter">
                     <BeginStoryboard>
@@ -135,7 +135,7 @@
                         <TextBlock FontSize="11"  Foreground="AliceBlue" Width="95" TextWrapping="WrapWithOverflow" TextTrimming="CharacterEllipsis" Text="{Binding Size, Converter={StaticResource SizeConverter}}"></TextBlock>
                         <TextBlock FontSize="11"  Foreground="AliceBlue" Width="88" TextWrapping="WrapWithOverflow" TextTrimming="CharacterEllipsis" Text="{Binding AddDate, StringFormat='MM/dd/yy H:mm'}" TextAlignment="Right"></TextBlock>
                     </StackPanel>
-                    
+
                 </StackPanel>
             </Canvas>
 

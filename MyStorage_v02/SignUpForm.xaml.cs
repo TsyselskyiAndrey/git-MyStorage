@@ -25,7 +25,7 @@ namespace MyStorage_v02
         public SignUpForm(double left, double top)
         {
             InitializeComponent();
-            
+
             this.Left = left;
             this.Top = top;
         }
@@ -85,14 +85,14 @@ namespace MyStorage_v02
             }
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ReturnButton_Click(object sender, RoutedEventArgs e)
         {
             Window w = new MainWindow(this.Left, this.Top);
             w.Show();
             this.Close();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void SignUpButton_Click(object sender, RoutedEventArgs e)
         {
             if (tbEmail.Text.Length != 0 && tbName.Text.Length != 0 && tbSurname.Text.Length != 0 && tbPass.Password.Length != 0 && tbPass2.Password.Length != 0)
             {
@@ -170,7 +170,7 @@ namespace MyStorage_v02
             if (flag == false)
             {
                 Dispatcher.Invoke(new Action(() => txt_validation.Text = ""));
-                
+
                 try
                 {
                     using (MyStorageEntities db = new MyStorageEntities())
@@ -213,9 +213,5 @@ namespace MyStorage_v02
             return Regex.IsMatch(email, @"^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$");
         }
 
-        private void tbName_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
     }
 }

@@ -45,7 +45,7 @@
                                 <Setter Property="Background" Value="#6760A5"></Setter>
                                 <Setter Property="Foreground" Value="WhiteSmoke"></Setter>
                             </Trigger>
-                            
+
 
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
@@ -250,11 +250,11 @@
                     </ControlTemplate>
                 </ToggleButton.Template>
             </ToggleButton>
-            <Button Style="{StaticResource MyButtonStyle}" Grid.Row="2" Height="30" Margin="25,90,25,10" Click="Button_Click_1" FontWeight="DemiBold">Log In</Button>
+            <Button Style="{StaticResource MyButtonStyle}" Grid.Row="2" Height="30" Margin="25,90,25,10" Click="LogInButton_Click" FontWeight="DemiBold">Log In</Button>
             <Polygon Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" Stroke="White" Points="0,0,330,0" Margin="25,0,25,62"></Polygon>
             <TextBlock Text="or" Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="White" FontSize="14" TextAlignment="Center" Margin="0,0,0,56" Background="#FF40444E" Width="30" FontWeight="DemiBold"></TextBlock>
-            <Button Style="{StaticResource MyButtonStyle}" Grid.Row="2" Height="30" Margin="25,220,25,18" Click="Button_Click" FontWeight="DemiBold">Sign Up</Button>
+            <Button Style="{StaticResource MyButtonStyle}" Grid.Row="2" Height="30" Margin="25,220,25,18" Click="SignUpButton_Click" FontWeight="DemiBold">Sign Up</Button>
         </Grid>
     </Canvas>
-    
+
 </Window>

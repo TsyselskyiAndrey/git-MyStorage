@@ -16,6 +16,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using System.Configuration;
 
 namespace MyStorage_v02
 {
@@ -32,8 +33,8 @@ namespace MyStorage_v02
             InitializeComponent();
             User = user;
             Mail = mail;
-            Task task = new Task(Method);
-            task.ContinueWith(Method2);
+            Task task = new Task(MethodTimer);
+            task.ContinueWith(MethodTimerEnd);
             task.Start();
             Task maintask = new Task(MainMethod);
             maintask.Start();
@@ -70,10 +71,10 @@ namespace MyStorage_v02
             Plg.Points.Add(new Point(ToolBar.ActualWidth / 1.42, 0));
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void SendButton_Click(object sender, RoutedEventArgs e)
         {
-            Task task = new Task(Method);
-            task.ContinueWith(Method2);
+            Task task = new Task(MethodTimer);
+            task.ContinueWith(MethodTimerEnd);
             task.Start();
             Task maintask = new Task(MainMethod);
             maintask.Start();
@@ -113,10 +114,10 @@ namespace MyStorage_v02
             {
                 MessageBox.Show(ex.Message);
             }
-            
+
         }
 
-        private void Method()
+        private void MethodTimer()
         {
             int time = 30;
             while (time != 0)
@@ -135,12 +136,12 @@ namespace MyStorage_v02
                 {
                     Environment.Exit(0);
                 }
-               
+
             }
-            
+
         }
 
-        private void Method2(Task obj)
+        private void MethodTimerEnd(Task obj)
         {
             Dispatcher.Invoke(new Action(() =>
             {
@@ -149,9 +150,9 @@ namespace MyStorage_v02
             }));
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void ConfirmButton_Click(object sender, RoutedEventArgs e)
         {
-            if(Code.ToString() == tbCode.Text)
+            if (Code.ToString() == tbCode.Text)
             {
                 txt_validation.Text = "";
                 Task task = Task.Run(Load);
@@ -159,7 +160,7 @@ namespace MyStorage_v02
             }
             else
             {
-                txt_validation.Text = "The code is incorrect! Try gain";
+                txt_validation.Text = "The code is incorrect! Try again";
             }
         }
 
@@ -177,7 +178,7 @@ namespace MyStorage_v02
                     db.SaveChanges();
                 }
                 Dispatcher.Invoke(() => {
-                    Window w = new ChooseForm(User);
+                    Window w = new Storage(User);
                     w.Show();
                 });
 
@@ -200,7 +201,7 @@ namespace MyStorage_v02
                     e.Handled = true;
                 }
             }
-            
+
         }
         private void LoadEnd(Task obj)
         {
@@ -211,6 +212,6 @@ namespace MyStorage_v02
 
         }
 
-       
+
     }
 }
