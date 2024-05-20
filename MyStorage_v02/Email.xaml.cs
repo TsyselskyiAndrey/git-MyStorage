@@ -25,7 +25,7 @@ namespace MyStorage_v02
     /// </summary>
     public partial class Email : Window
     {
-        public string Mail { get; set; } = "email@gmail.com";
+        private string Mail { get; set; } = "email@gmail.com";
         private Users User { get; set; }
         private int Code { get; set; }
         public Email(string mail, Users user)

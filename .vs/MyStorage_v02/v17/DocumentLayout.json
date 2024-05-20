@@ -3,36 +3,56 @@
   "WorkspaceRootPath": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|e:\\it step\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\mystorage_v02\\mystorage_v02\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|solutionrelative:mystorage_v02\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\mystorage_v02\\signupform.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|solutionrelative:mystorage_v02\\signupform.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\mystorage_v02\\email.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|solutionrelative:mystorage_v02\\email.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\mystorage_v02\\storage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|solutionrelative:mystorage_v02\\storage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\mystorage_v02\\storage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|solutionrelative:mystorage_v02\\storage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\mystorage_v02\\myfile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|solutionrelative:mystorage_v02\\myfile.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|e:\\it step\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\mystorage_v02\\mystorage_v02\\renamewin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|solutionrelative:mystorage_v02\\renamewin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\mystorage_v02\\storage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|solutionrelative:mystorage_v02\\storage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|e:\\it step\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\mystorage_v02\\mystorage_v02\\processcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|solutionrelative:mystorage_v02\\processcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\mystorage_v02\\email.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|solutionrelative:mystorage_v02\\email.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\mystorage_v02\\email.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|solutionrelative:mystorage_v02\\email.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|e:\\it step\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\mystorage_v02\\mystorage_v02\\signupform.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|solutionrelative:mystorage_v02\\signupform.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|e:\\it step\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\mystorage_v02\\mystorage_v02\\signupform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|solutionrelative:mystorage_v02\\signupform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|e:\\it step\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\mystorage_v02\\mystorage_v02\\loadcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|solutionrelative:mystorage_v02\\loadcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|e:\\it step\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\mystorage_v02\\mystorage_v02\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|solutionrelative:mystorage_v02\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\mystorage_v02\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|solutionrelative:mystorage_v02\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\mystorage_v02\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|solutionrelative:mystorage_v02\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F0261907-EBA0-4B00-A2A0-C49019052E1E}|MyStorage_v02\\MyStorage_v02.csproj|E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\mystorage_v02\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -46,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 221,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,50 +74,130 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "RenameWin.xaml.cs",
+              "DocumentMoniker": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\MyStorage_v02\\RenameWin.xaml.cs",
+              "RelativeDocumentMoniker": "MyStorage_v02\\RenameWin.xaml.cs",
+              "ToolTip": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\MyStorage_v02\\RenameWin.xaml.cs",
+              "RelativeToolTip": "MyStorage_v02\\RenameWin.xaml.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowBUAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T19:54:05.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProcessControl.xaml.cs",
+              "DocumentMoniker": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\MyStorage_v02\\ProcessControl.xaml.cs",
+              "RelativeDocumentMoniker": "MyStorage_v02\\ProcessControl.xaml.cs",
+              "ToolTip": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\MyStorage_v02\\ProcessControl.xaml.cs",
+              "RelativeToolTip": "MyStorage_v02\\ProcessControl.xaml.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T19:24:20.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Users.cs",
+              "DocumentMoniker": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\MyStorage_v02\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "MyStorage_v02\\Models\\Users.cs",
+              "ToolTip": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\MyStorage_v02\\Models\\Users.cs",
+              "RelativeToolTip": "MyStorage_v02\\Models\\Users.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T19:02:01.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoadControl.xaml.cs",
+              "DocumentMoniker": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\MyStorage_v02\\LoadControl.xaml.cs",
+              "RelativeDocumentMoniker": "MyStorage_v02\\LoadControl.xaml.cs",
+              "ToolTip": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\MyStorage_v02\\LoadControl.xaml.cs",
+              "RelativeToolTip": "MyStorage_v02\\LoadControl.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T18:56:20.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\MyStorage_v02\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MyStorage_v02\\MainWindow.xaml",
+              "ToolTip": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\MyStorage_v02\\MainWindow.xaml",
+              "RelativeToolTip": "MyStorage_v02\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-20T16:19:09.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SignUpForm.xaml",
+              "DocumentMoniker": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\MyStorage_v02\\SignUpForm.xaml",
+              "RelativeDocumentMoniker": "MyStorage_v02\\SignUpForm.xaml",
+              "ToolTip": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\MyStorage_v02\\SignUpForm.xaml",
+              "RelativeToolTip": "MyStorage_v02\\SignUpForm.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-20T18:30:51.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MyFile.xaml.cs",
               "DocumentMoniker": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\MyStorage_v02\\MyFile.xaml.cs",
               "RelativeDocumentMoniker": "MyStorage_v02\\MyFile.xaml.cs",
               "ToolTip": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\MyStorage_v02\\MyFile.xaml.cs",
               "RelativeToolTip": "MyStorage_v02\\MyFile.xaml.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAASwCEAAAAAAAAA",
+              "ViewState": "AQIAANMAAAAAAAAAAAAuwOwAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T13:15:16.985Z"
+              "WhenOpened": "2024-05-19T13:15:16.985Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Storage.xaml.cs",
               "DocumentMoniker": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\MyStorage_v02\\Storage.xaml.cs",
               "RelativeDocumentMoniker": "MyStorage_v02\\Storage.xaml.cs",
               "ToolTip": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\MyStorage_v02\\Storage.xaml.cs",
               "RelativeToolTip": "MyStorage_v02\\Storage.xaml.cs",
-              "ViewState": "AQIAANcDAAAAAAAAAAASwAMFAAAJAAAA",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAwwFEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T12:23:58.046Z"
+              "WhenOpened": "2024-05-19T12:23:58.046Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Storage.xaml",
               "DocumentMoniker": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\MyStorage_v02\\Storage.xaml",
               "RelativeDocumentMoniker": "MyStorage_v02\\Storage.xaml",
               "ToolTip": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\MyStorage_v02\\Storage.xaml",
               "RelativeToolTip": "MyStorage_v02\\Storage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-19T12:23:56.079Z"
+              "WhenOpened": "2024-05-19T12:23:56.079Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Email.xaml.cs",
               "DocumentMoniker": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\MyStorage_v02\\Email.xaml.cs",
               "RelativeDocumentMoniker": "MyStorage_v02\\Email.xaml.cs",
               "ToolTip": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\MyStorage_v02\\Email.xaml.cs",
               "RelativeToolTip": "MyStorage_v02\\Email.xaml.cs",
-              "ViewState": "AQIAAIkAAAAAAAAAAAASwCUAAAAZAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T11:54:05.161Z"
+              "WhenOpened": "2024-05-19T11:54:05.161Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -108,54 +208,46 @@
               "ToolTip": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\MyStorage_v02\\Email.xaml",
               "RelativeToolTip": "MyStorage_v02\\Email.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-19T11:54:01.552Z"
+              "WhenOpened": "2024-05-19T11:54:01.552Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 12,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\MyStorage_v02\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MyStorage_v02\\MainWindow.xaml.cs",
               "ToolTip": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\MyStorage_v02\\MainWindow.xaml.cs",
               "RelativeToolTip": "MyStorage_v02\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAJQAAAAAAAAAAAAUwK0AAAAlAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAADwvy4AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-19T10:45:18.419Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\MyStorage_v02\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MyStorage_v02\\MainWindow.xaml",
-              "ToolTip": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\MyStorage_v02\\MainWindow.xaml",
-              "RelativeToolTip": "MyStorage_v02\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-19T10:45:14.469Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "App.xaml",
               "DocumentMoniker": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\MyStorage_v02\\App.xaml",
               "RelativeDocumentMoniker": "MyStorage_v02\\App.xaml",
               "ToolTip": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\MyStorage_v02\\App.xaml",
               "RelativeToolTip": "MyStorage_v02\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-19T09:41:44.846Z"
+              "WhenOpened": "2024-05-19T09:41:44.846Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "SignUpForm.xaml.cs",
               "DocumentMoniker": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\MyStorage_v02\\SignUpForm.xaml.cs",
               "RelativeDocumentMoniker": "MyStorage_v02\\SignUpForm.xaml.cs",
               "ToolTip": "E:\\IT STEP\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F\\MyStorage_v02\\MyStorage_v02\\SignUpForm.xaml.cs",
               "RelativeToolTip": "MyStorage_v02\\SignUpForm.xaml.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAqwMEAAAAJAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAADgAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T09:38:12.993Z"
+              "WhenOpened": "2024-05-19T09:38:12.993Z",
+              "EditorCaption": ""
             }
           ]
         }

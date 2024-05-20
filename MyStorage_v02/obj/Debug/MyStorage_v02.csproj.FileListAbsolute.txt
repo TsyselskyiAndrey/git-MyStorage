@@ -164,7 +164,6 @@ E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\en\Microsoft.W
 E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\MyStorage_v02.csproj.AssemblyReference.cache
 E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\Email.g.cs
 E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\LoadControl.g.cs
-E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\MainWindow.g.cs
 E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\MyFile.g.cs
 E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\ProcessControl.g.cs
 E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\RenameWin.g.cs
@@ -177,7 +176,6 @@ E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\MyStorage_v02_
 E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\MyStorage_v02_MarkupCompile.lref
 E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\Email.baml
 E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\LoadControl.baml
-E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\MainWindow.baml
 E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\MyFile.baml
 E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\ProcessControl.baml
 E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\RenameWin.baml
@@ -400,3 +398,5 @@ E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\MaterialDesign
 E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.Xaml.Behaviors.pdb
 E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\Microsoft.Xaml.Behaviors.xml
 E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\App.baml
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\MainWindow.g.cs
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\MainWindow.baml

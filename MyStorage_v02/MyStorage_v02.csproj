@@ -206,11 +206,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ConverterMode.cs" />
+    <Compile Include="Converter\ConverterMode.cs" />
     <Compile Include="Email.xaml.cs">
       <DependentUpon>Email.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ExtensionConverter.cs" />
+    <Compile Include="Converter\ExtensionConverter.cs" />
     <Compile Include="LoadControl.xaml.cs">
       <DependentUpon>LoadControl.xaml</DependentUpon>
     </Compile>
@@ -247,7 +247,7 @@
     <Compile Include="SignUpForm.xaml.cs">
       <DependentUpon>SignUpForm.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SizeConverter.cs" />
+    <Compile Include="Converter\SizeConverter.cs" />
     <Compile Include="Storage.xaml.cs">
       <DependentUpon>Storage.xaml</DependentUpon>
     </Compile>

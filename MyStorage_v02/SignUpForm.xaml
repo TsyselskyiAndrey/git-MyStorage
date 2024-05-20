@@ -167,7 +167,7 @@
     </Window.Background>
     <Canvas>
         <local:LoadControl Panel.ZIndex="999" Canvas.Top="25" Width="362" Height="541" x:Name="load_img" Visibility="Collapsed"></local:LoadControl>
-        <Grid>
+        <Grid HorizontalAlignment="Left" Width="365">
             <Grid.RowDefinitions>
                 <RowDefinition Height="25"></RowDefinition>
                 <RowDefinition Height="200"></RowDefinition>
