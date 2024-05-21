@@ -25,6 +25,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 using WpfAnimatedGif;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace MyStorage_v02
 {
@@ -465,6 +466,10 @@ namespace MyStorage_v02
 
         private void TabItem_GotFocus(object sender, RoutedEventArgs e)
         {
+            if (File.Exists("config.txt"))
+            {
+                File.Delete("config.txt");
+            }
             this.Close();
         }
 
