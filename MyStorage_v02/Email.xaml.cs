@@ -178,7 +178,7 @@ namespace MyStorage_v02
                     db.SaveChanges();
                 }
                 Dispatcher.Invoke(() => {
-                    Window w = new Storage(User);
+                    Window w = new ChooseForm(User);
                     w.Show();
                 });
 

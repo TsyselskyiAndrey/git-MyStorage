@@ -38,6 +38,7 @@ namespace MyStorage_v02
 
         private static bool flag = true;
 
+        private static bool key = false;
         public Task MyTask { get; set; }
         public Task MyTask2 { get; set; }
         public Task MyTask3 { get; set; }
@@ -184,6 +185,8 @@ namespace MyStorage_v02
 
         private void cross_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            Window w = new ChooseForm(User);
+            w.Show();
             this.Close();
         }
 
@@ -466,11 +469,18 @@ namespace MyStorage_v02
 
         private void TabItem_GotFocus(object sender, RoutedEventArgs e)
         {
-            if (File.Exists("config.txt"))
+            if (key == false)
             {
-                File.Delete("config.txt");
+                Window w = new ChooseForm(User);
+                w.Show();
+                this.Close();
+                key = true;
             }
-            this.Close();
+            else
+            {
+                key = false;
+            }
+
         }
 
         private void OnDragOver(object sender, DragEventArgs e)

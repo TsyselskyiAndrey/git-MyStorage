@@ -234,6 +234,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ChooseForm.xaml.cs">
+      <DependentUpon>ChooseForm.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Converter\ConverterMode.cs" />
     <Compile Include="Email.xaml.cs">
       <DependentUpon>Email.xaml</DependentUpon>
@@ -279,6 +282,10 @@
     <Compile Include="Storage.xaml.cs">
       <DependentUpon>Storage.xaml</DependentUpon>
     </Compile>
+    <Page Include="ChooseForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Email.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

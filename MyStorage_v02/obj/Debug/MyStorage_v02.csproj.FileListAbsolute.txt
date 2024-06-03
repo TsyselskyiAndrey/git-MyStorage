@@ -404,3 +404,5 @@ E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\MyStorage_v02.
 E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\bin\Debug\MyStorage_v02.application
 E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\MyStorage_v02.exe.manifest
 E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\MyStorage_v02.application
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\ChooseForm.g.cs
+E:\IT STEP\Курсовая\MyStorage_v02\MyStorage_v02\obj\Debug\ChooseForm.baml

@@ -180,7 +180,7 @@ namespace MyStorage_v02
                             }
 
                             Dispatcher.Invoke(() => {
-                                Window w = new Storage(user);
+                                Window w = new ChooseForm(user);
                                 w.Show();
                             });
 
@@ -217,7 +217,7 @@ namespace MyStorage_v02
                     if (user != null)
                     {
                         Dispatcher.Invoke(() => {
-                            Window w = new Storage(user);
+                            Window w = new ChooseForm(user);
                             w.Show();
                         });
 
